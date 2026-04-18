@@ -323,582 +323,582 @@
 const CARDS = [
   // === Marr's levels & Cross-cutting ===
   {
-    topic: "Cross-cutting",
-    term: "Marr's three levels of explanation",
-    termCn: "Marr 的三层解释",
-    back: "研究任何心智能力都拆成三层：<br><br><strong>Functional（功能层）</strong>：<em>这个能力要解决什么问题？</em><br>例：看东西 = 从 2D 视网膜图猜 3D 世界。<br><br><strong>Algorithmic（算法层）</strong>：<em>用什么步骤/方法？</em><br>例：Bayesian inference、phrase-structure grammar、Q-learning。<br><br><strong>Physical（物理层）</strong>：<em>在哪个神经结构实现？</em><br>例：Broca / Wernicke / FFA / vmPFC / VTA。<br><br><span class='en'>Every topic gets analyzed at all three levels. Exam will definitely test this.</span>"
+    topic: `Cross-cutting`,
+    term: `Marr's three levels of explanation`,
+    termCn: `Marr 的三层解释`,
+    back: `研究任何心智能力都拆成三层：<br><br><strong>Functional（功能层）</strong>：<em>这个能力要解决什么问题？</em><br>例：看东西 = 从 2D 视网膜图猜 3D 世界。<br><br><strong>Algorithmic（算法层）</strong>：<em>用什么步骤/方法？</em><br>例：Bayesian inference、phrase-structure grammar、Q-learning。<br><br><strong>Physical（物理层）</strong>：<em>在哪个神经结构实现？</em><br>例：Broca / Wernicke / FFA / vmPFC / VTA。<br><br><span class='en'>Every topic gets analyzed at all three levels. Exam will definitely test this.</span>`
   },
   {
-    topic: "Cross-cutting",
-    term: "Input-Output Equivalence",
-    termCn: "输入-输出等价",
-    back: "同一个 <strong>function</strong> 可以由 <strong>多个不同算法</strong> 实现。<br><br>变的是 <em>function → algorithm</em> 这一层。<br><br>例子：<ul><li>找回文有多种算法（两端往中间、中间往两端）</li><li>Turing Test ——只比较输入输出，不管内部怎么算</li></ul><span class='en'>Same function, different algorithms.</span>"
+    topic: `Cross-cutting`,
+    term: `Input-Output Equivalence`,
+    termCn: `输入-输出等价`,
+    back: `同一个 <strong>function</strong> 可以由 <strong>多个不同算法</strong> 实现。<br><br>变的是 <em>function → algorithm</em> 这一层。<br><br>例子：<ul><li>找回文有多种算法（两端往中间、中间往两端）</li><li>Turing Test ——只比较输入输出，不管内部怎么算</li></ul><span class='en'>Same function, different algorithms.</span>`
   },
   {
-    topic: "Cross-cutting",
-    term: "Multiple Realizability",
-    termCn: "多重可实现",
-    back: "同一个 <strong>algorithm</strong> 可以在 <strong>多个不同物理基底</strong> 上实现。<br><br>变的是 <em>algorithm → physical</em> 这一层。<br><br>例子：<ul><li>Candy Crush 在 Mac / iPhone / Android 上都能跑</li><li>某个回文算法在图灵机或 PC 上都能跑</li><li>Bayesian 算法在人脑或外星人脑里都可以</li></ul><span class='en'>Same algorithm, different physical substrates.</span>"
+    topic: `Cross-cutting`,
+    term: `Multiple Realizability`,
+    termCn: `多重可实现`,
+    back: `同一个 <strong>algorithm</strong> 可以在 <strong>多个不同物理基底</strong> 上实现。<br><br>变的是 <em>algorithm → physical</em> 这一层。<br><br>例子：<ul><li>Candy Crush 在 Mac / iPhone / Android 上都能跑</li><li>某个回文算法在图灵机或 PC 上都能跑</li><li>Bayesian 算法在人脑或外星人脑里都可以</li></ul><span class='en'>Same algorithm, different physical substrates.</span>`
   },
   {
-    topic: "Cross-cutting",
-    term: "Dual Processes",
-    termCn: "双过程",
-    back: "心智有<strong>快</strong>（自动/感性/无意识）和<strong>慢</strong>（刻意/理性/有意识）两套系统。<br><br>不同主题里的版本：<ul><li>Kahneman 的 <strong>System 1 / System 2</strong></li><li>LeDoux 的 <strong>Low Road / High Road</strong>（恐惧）</li><li>Cosmides & Tooby 的 <strong>Cheater Detection Module</strong> vs central cognition</li><li><strong>Blindsight</strong>：皮层下（无意识）vs 皮层（有意识）视觉</li><li>Greene 的道德判断：personal alarm-bell vs impersonal cost-benefit</li></ul><span class='en'>Fast/automatic vs slow/deliberate. Appears in every major topic.</span>"
+    topic: `Cross-cutting`,
+    term: `Dual Processes`,
+    termCn: `双过程`,
+    back: `心智有<strong>快</strong>（自动/感性/无意识）和<strong>慢</strong>（刻意/理性/有意识）两套系统。<br><br>不同主题里的版本：<ul><li>Kahneman 的 <strong>System 1 / System 2</strong></li><li>LeDoux 的 <strong>Low Road / High Road</strong>（恐惧）</li><li>Cosmides & Tooby 的 <strong>Cheater Detection Module</strong> vs central cognition</li><li><strong>Blindsight</strong>：皮层下（无意识）vs 皮层（有意识）视觉</li><li>Greene 的道德判断：personal alarm-bell vs impersonal cost-benefit</li></ul><span class='en'>Fast/automatic vs slow/deliberate. Appears in every major topic.</span>`
   },
   {
-    topic: "Cross-cutting",
-    term: "Poverty of the Stimulus",
-    termCn: "刺激贫乏论证",
-    back: "<strong>输入贫乏、输出丰富</strong> → 必须有先天结构填补。<br><br>经典领域：<ul><li><strong>Language</strong>：儿童输入有限却掌握复杂语法 → <em>Universal Grammar</em>（Chomsky）</li><li><strong>Moral</strong>：儿童从贫乏道德输入发展出精致判断 → <em>Universal Moral Grammar</em>（Mikhail）</li><li><strong>Perception</strong>：视觉系统用 hidden assumptions 作为先验</li><li><strong>Infant cognition</strong>：婴儿短期内学到海量知识</li></ul><span class='en'>The gap between meager input and rich output requires innate structure.</span>"
+    topic: `Cross-cutting`,
+    term: `Poverty of the Stimulus`,
+    termCn: `刺激贫乏论证`,
+    back: `<strong>输入贫乏、输出丰富</strong> → 必须有先天结构填补。<br><br>经典领域：<ul><li><strong>Language</strong>：儿童输入有限却掌握复杂语法 → <em>Universal Grammar</em>（Chomsky）</li><li><strong>Moral</strong>：儿童从贫乏道德输入发展出精致判断 → <em>Universal Moral Grammar</em>（Mikhail）</li><li><strong>Perception</strong>：视觉系统用 hidden assumptions 作为先验</li><li><strong>Infant cognition</strong>：婴儿短期内学到海量知识</li></ul><span class='en'>The gap between meager input and rich output requires innate structure.</span>`
   },
   {
-    topic: "Cross-cutting",
-    term: "Tacit Knowledge",
-    termCn: "隐性知识",
-    back: "系统里有、但人<strong>说不出来</strong>的知识——你在用，但解释不清。<br><br>例子：<ul><li>语言的 <em>interrogative rule</em>（"move main verb"，你用对了但说不出）</li><li>视觉的 <em>5 条 hidden assumptions</em></li><li>婴儿的 <em>直觉物理</em>（continuity、solidity 等）</li><li>道德的 <em>Doctrine of Double Effect</em></li></ul><span class='en'>Information within a system that the person cannot readily articulate.</span>"
+    topic: `Cross-cutting`,
+    term: `Tacit Knowledge`,
+    termCn: `隐性知识`,
+    back: `系统里有、但人<strong>说不出来</strong>的知识——你在用，但解释不清。<br><br>例子：<ul><li>语言的 <em>interrogative rule</em>（"move main verb"，你用对了但说不出）</li><li>视觉的 <em>5 条 hidden assumptions</em></li><li>婴儿的 <em>直觉物理</em>（continuity、solidity 等）</li><li>道德的 <em>Doctrine of Double Effect</em></li></ul><span class='en'>Information within a system that the person cannot readily articulate.</span>`
   },
   {
-    topic: "Cross-cutting",
-    term: "Universality",
-    termCn: "普遍性",
-    back: "支持先天性的一大论证——某能力在<strong>所有人类文化</strong>中都出现。<br><br>例子：<ul><li><strong>Language universality</strong>：所有社会都有语言，没有"石器时代语言"</li><li><strong>Nicaraguan Sign Language</strong>（Senghas 2004）——儿童自发创造语言</li><li><strong>Ekman's basic emotions</strong>——6 种基本情绪跨文化识别</li></ul><span class='en'>Present in all human societies with same complexity everywhere.</span>"
+    topic: `Cross-cutting`,
+    term: `Universality`,
+    termCn: `普遍性`,
+    back: `支持先天性的一大论证——某能力在<strong>所有人类文化</strong>中都出现。<br><br>例子：<ul><li><strong>Language universality</strong>：所有社会都有语言，没有"石器时代语言"</li><li><strong>Nicaraguan Sign Language</strong>（Senghas 2004）——儿童自发创造语言</li><li><strong>Ekman's basic emotions</strong>——6 种基本情绪跨文化识别</li></ul><span class='en'>Present in all human societies with same complexity everywhere.</span>`
   },
 
   // === Modularity ===
   {
-    topic: "Modularity",
-    term: "Modularity (6 characteristic features)",
-    termCn: "模块性的 6 个典型特征",
-    back: "Fodor 提出的 <strong>characteristic</strong> 特征（<em>注意：没有一条是 required！</em>）：<br><ul><li><strong>Mandatory</strong>（强制）— 不受意识控制就启动</li><li><strong>Fast</strong>（快）— 250-350ms 处理一个词</li><li><strong>Domain-specific</strong>（领域特定）— 只处理有限输入</li><li><strong>Informationally encapsulated</strong>（信息封装）— 模块拿不到其他系统信息</li><li><strong>Inaccessible</strong>（不可访问）— 其他系统拿不到模块内信息</li><li><strong>Neurally discretely localized</strong>（神经定位）— 有特定脑区</li></ul><span class='en'>Exam 2 考过："Which is required?" 答：<strong>None of the above!</strong></span>"
+    topic: `Modularity`,
+    term: `Modularity (6 characteristic features)`,
+    termCn: `模块性的 6 个典型特征`,
+    back: `Fodor 提出的 <strong>characteristic</strong> 特征（<em>注意：没有一条是 required！</em>）：<br><ul><li><strong>Mandatory</strong>（强制）— 不受意识控制就启动</li><li><strong>Fast</strong>（快）— 250-350ms 处理一个词</li><li><strong>Domain-specific</strong>（领域特定）— 只处理有限输入</li><li><strong>Informationally encapsulated</strong>（信息封装）— 模块拿不到其他系统信息</li><li><strong>Inaccessible</strong>（不可访问）— 其他系统拿不到模块内信息</li><li><strong>Neurally discretely localized</strong>（神经定位）— 有特定脑区</li></ul><span class='en'>Exam 2 考过："Which is required?" 答：<strong>None of the above!</strong></span>`
   },
   {
-    topic: "Modularity",
-    term: "Informational Encapsulation vs Inaccessibility",
-    termCn: "信息封装 vs 不可访问",
-    back: "方向相反，容易混：<br><br><strong>Informational Encapsulation</strong>：<em>模块 → 外</em> 看不到<br>Müller-Lyer 错觉——你明知两线等长，视觉模块拿不到这个知识，还是看到不等长。<br>飞行恐惧——明知飞机安全，恐惧模块不听。<br><br><strong>Inaccessibility</strong>：<em>外 → 模块</em> 看不到<br>Xin 会用 interrogative rule 但说不出规则内容。<br>Moral grammar 的 hidden rules 你说不出。<br><br><span class='en'>Encapsulation: module can't see outside. Inaccessibility: outside can't see into module.</span>"
+    topic: `Modularity`,
+    term: `Informational Encapsulation vs Inaccessibility`,
+    termCn: `信息封装 vs 不可访问`,
+    back: `方向相反，容易混：<br><br><strong>Informational Encapsulation</strong>：<em>模块 → 外</em> 看不到<br>Müller-Lyer 错觉——你明知两线等长，视觉模块拿不到这个知识，还是看到不等长。<br>飞行恐惧——明知飞机安全，恐惧模块不听。<br><br><strong>Inaccessibility</strong>：<em>外 → 模块</em> 看不到<br>Xin 会用 interrogative rule 但说不出规则内容。<br>Moral grammar 的 hidden rules 你说不出。<br><br><span class='en'>Encapsulation: module can't see outside. Inaccessibility: outside can't see into module.</span>`
   },
 
   // === Perception ===
   {
-    topic: "Perception",
-    term: "Inverse Optics Problem",
-    termCn: "逆光学问题",
-    back: "感知的根本难题：<strong>从 2D 视网膜图像推断外界 3D 场景</strong>。<br><br>这是 <strong>underdetermined</strong>（欠定）问题——无数不同 3D 场景可以投射出完全相同的 2D 图像。<br><br>例：一排不同距离的正方形 vs 一排歪菱形在不同距离，可以在视网膜上留下完全一样的图案。<br><br>解决靠 <em>hidden assumptions（hidden priors）</em> + Bayes' Rule。<br><br><span class='en'>The brain uses hidden assumptions as Bayesian priors.</span>"
+    topic: `Perception`,
+    term: `Inverse Optics Problem`,
+    termCn: `逆光学问题`,
+    back: `感知的根本难题：<strong>从 2D 视网膜图像推断外界 3D 场景</strong>。<br><br>这是 <strong>underdetermined</strong>（欠定）问题——无数不同 3D 场景可以投射出完全相同的 2D 图像。<br><br>例：一排不同距离的正方形 vs 一排歪菱形在不同距离，可以在视网膜上留下完全一样的图案。<br><br>解决靠 <em>hidden assumptions（hidden priors）</em> + Bayes' Rule。<br><br><span class='en'>The brain uses hidden assumptions as Bayesian priors.</span>`
   },
   {
-    topic: "Perception",
-    term: "5 Hidden Assumptions of Perception",
-    termCn: "感知系统的 5 条隐藏假设",
-    back: "<ol><li>光来自<strong>单一顶部光源</strong>（single overhead light source）</li><li>阴影下物体<strong>比传感器显示的更亮</strong></li><li>东西倾向<strong>直线运动</strong></li><li>运动物上所有点<strong>同步运动</strong></li><li>运动物会<strong>逐步遮盖/露出持续背景</strong></li></ol><br>这 5 条都是 <strong>innate</strong>（Hershberger 小鸡实验证明"光从上"是先天的）。<br><br><span class='en'>These are Bayesian priors—innate structural constraints.</span>"
+    topic: `Perception`,
+    term: `5 Hidden Assumptions of Perception`,
+    termCn: `感知系统的 5 条隐藏假设`,
+    back: `<ol><li>光来自<strong>单一顶部光源</strong>（single overhead light source）</li><li>阴影下物体<strong>比传感器显示的更亮</strong></li><li>东西倾向<strong>直线运动</strong></li><li>运动物上所有点<strong>同步运动</strong></li><li>运动物会<strong>逐步遮盖/露出持续背景</strong></li></ol><br>这 5 条都是 <strong>innate</strong>（Hershberger 小鸡实验证明"光从上"是先天的）。<br><br><span class='en'>These are Bayesian priors—innate structural constraints.</span>`
   },
   {
-    topic: "Perception",
-    term: "Bayes' Rule",
-    termCn: "贝叶斯规则",
-    back: "<span class='formula'>P(h|d) = P(d|h) · P(h) / Σⱼ P(d|hⱼ) · P(hⱼ)</span><strong>P(h|d)</strong> = <em>Posterior</em>（后验，看到数据后对假设的信念）<br><strong>P(d|h)</strong> = <em>Likelihood</em>（似然）<br><strong>P(h)</strong> = <em>Prior</em>（先验）<br><strong>分母</strong> = <em>Normalizing term</em>（归一化项 / 总证据）<br><br>用于感知：<span class='formula'>P(scene|retinal) = P(retinal|scene)·P(scene) / P(retinal)</span>P(scene) = hidden assumptions！"
+    topic: `Perception`,
+    term: `Bayes' Rule`,
+    termCn: `贝叶斯规则`,
+    back: `<span class='formula'>P(h|d) = P(d|h) · P(h) / Σⱼ P(d|hⱼ) · P(hⱼ)</span><strong>P(h|d)</strong> = <em>Posterior</em>（后验，看到数据后对假设的信念）<br><strong>P(d|h)</strong> = <em>Likelihood</em>（似然）<br><strong>P(h)</strong> = <em>Prior</em>（先验）<br><strong>分母</strong> = <em>Normalizing term</em>（归一化项 / 总证据）<br><br>用于感知：<span class='formula'>P(scene|retinal) = P(retinal|scene)·P(scene) / P(retinal)</span>P(scene) = hidden assumptions！`
   },
   {
-    topic: "Perception",
-    term: "Hershberger (1970) chicks",
-    termCn: "Hershberger 小鸡实验",
-    back: "证明 <em>"光从上方来"假设是 <strong>innate</strong></em>。<br><br>方法：小鸡从孵化起就在<strong>光从下方来</strong>的笼子里——连孵蛋都用下方灯。<br><br>训练啄<em>凹坑</em> 或 <em>凸起</em>，然后测试两张图：<br><ul><li>B 图：阴影在上（假设光从上 → 看起来像 dent）</li><li>C 图：阴影在下（假设光从上 → 看起来像 bump）</li></ul>结果：训练啄 <strong>dents</strong> 的啄 <strong>B</strong>；训练啄 <strong>bumps</strong> 的啄 <strong>C</strong>。<br><br>结论：尽管从未经历过光从上，它们依然默认这个假设 → <strong>innate</strong>。"
+    topic: `Perception`,
+    term: `Hershberger (1970) chicks`,
+    termCn: `Hershberger 小鸡实验`,
+    back: `证明 <em>"光从上方来"假设是 <strong>innate</strong></em>。<br><br>方法：小鸡从孵化起就在<strong>光从下方来</strong>的笼子里——连孵蛋都用下方灯。<br><br>训练啄<em>凹坑</em> 或 <em>凸起</em>，然后测试两张图：<br><ul><li>B 图：阴影在上（假设光从上 → 看起来像 dent）</li><li>C 图：阴影在下（假设光从上 → 看起来像 bump）</li></ul>结果：训练啄 <strong>dents</strong> 的啄 <strong>B</strong>；训练啄 <strong>bumps</strong> 的啄 <strong>C</strong>。<br><br>结论：尽管从未经历过光从上，它们依然默认这个假设 → <strong>innate</strong>。`
   },
   {
-    topic: "Perception",
-    term: "Sugita (2008) face-deprived monkeys",
-    termCn: "Sugita 猴子面孔剥夺实验",
-    back: "证明 <strong>先天面孔模板 + 经验微调</strong>。<br><br>方法：日本猕猴从出生起被剥夺面孔暴露（饲养员戴面具）6/12/24 月，然后暴露人脸或猴脸 1 月。<br><br>结果：<ul><li><strong>剥夺期结束前</strong>：已经偏好面孔胜过物体（<em>天生的面孔检测模板</em>！），但不区分人脸/猴脸</li><li><strong>暴露人脸 1 月后</strong>：偏好人脸</li><li><strong>暴露猴脸 1 月后</strong>：像控制组，偏好猴脸</li></ul><br>展示 <strong>innate structure + environmental input + sensitive period</strong>。"
+    topic: `Perception`,
+    term: `Sugita (2008) face-deprived monkeys`,
+    termCn: `Sugita 猴子面孔剥夺实验`,
+    back: `证明 <strong>先天面孔模板 + 经验微调</strong>。<br><br>方法：日本猕猴从出生起被剥夺面孔暴露（饲养员戴面具）6/12/24 月，然后暴露人脸或猴脸 1 月。<br><br>结果：<ul><li><strong>剥夺期结束前</strong>：已经偏好面孔胜过物体（<em>天生的面孔检测模板</em>！），但不区分人脸/猴脸</li><li><strong>暴露人脸 1 月后</strong>：偏好人脸</li><li><strong>暴露猴脸 1 月后</strong>：像控制组，偏好猴脸</li></ul><br>展示 <strong>innate structure + environmental input + sensitive period</strong>。`
   },
   {
-    topic: "Perception",
-    term: "Blindsight",
-    termCn: "盲视",
-    back: "<strong>V1（初级视觉皮层）</strong>受损的患者——主观"看不见"受损视野里的东西，<strong>但能避开障碍物、接住抛物</strong>。<br><br>视觉信号走皮层下通路：<em>retina → LGN → pulvinar / superior colliculus → 其他皮层</em>，绕开 V1，所以不上意识但能指导动作。<br><br>证据：视觉处理有 <strong>dual processes</strong>——有意识皮层通路 + 无意识皮层下通路。<br><br><span class='en'>Damage in primary visual cortex (V1) in the occipital lobe.</span>"
+    topic: `Perception`,
+    term: `Blindsight`,
+    termCn: `盲视`,
+    back: `<strong>V1（初级视觉皮层）</strong>受损的患者——主观"看不见"受损视野里的东西，<strong>但能避开障碍物、接住抛物</strong>。<br><br>视觉信号走皮层下通路：<em>retina → LGN → pulvinar / superior colliculus → 其他皮层</em>，绕开 V1，所以不上意识但能指导动作。<br><br>证据：视觉处理有 <strong>dual processes</strong>——有意识皮层通路 + 无意识皮层下通路。<br><br><span class='en'>Damage in primary visual cortex (V1) in the occipital lobe.</span>`
   },
   {
-    topic: "Perception",
-    term: "Prosopagnosia",
-    termCn: "面孔失认症",
-    back: "<strong>Fusiform Face Area (FFA)</strong> 损伤 → 无法识别面孔。<br><br>位置：<em>inferior (ventral) temporal lobe</em> 颞叶下/腹侧。<br><br>特点：<ul><li><strong>Selective deficit</strong>：只影响面孔，其他视觉正常</li><li>不是记忆问题</li></ul><span class='en'>Face blindness—selective deficit in face processing despite intact vision.</span>"
+    topic: `Perception`,
+    term: `Prosopagnosia`,
+    termCn: `面孔失认症`,
+    back: `<strong>Fusiform Face Area (FFA)</strong> 损伤 → 无法识别面孔。<br><br>位置：<em>inferior (ventral) temporal lobe</em> 颞叶下/腹侧。<br><br>特点：<ul><li><strong>Selective deficit</strong>：只影响面孔，其他视觉正常</li><li>不是记忆问题</li></ul><span class='en'>Face blindness—selective deficit in face processing despite intact vision.</span>`
   },
 
   // === Infant Cognition ===
   {
-    topic: "Infant",
-    term: "Violation of Expectation method",
-    termCn: "违反预期方法",
-    back: "婴儿研究的经典方法。<br><br>原理：给婴儿看两种事件（符合预期 vs 违反预期），测<strong>注视时长</strong>。<br><br>如果婴儿对 <em>violation</em> 看得更久 → 说明她：<ol><li>有预期</li><li>检测到违反</li><li>用增加注意回应</li></ol>例：1+1 实验——屏幕后放玩具，揭示只剩 1 个（违反）vs 2 个（符合预期）。<br><br><span class='en'>Babies look longer at unexpected events.</span>"
+    topic: `Infant`,
+    term: `Violation of Expectation method`,
+    termCn: `违反预期方法`,
+    back: `婴儿研究的经典方法。<br><br>原理：给婴儿看两种事件（符合预期 vs 违反预期），测<strong>注视时长</strong>。<br><br>如果婴儿对 <em>violation</em> 看得更久 → 说明她：<ol><li>有预期</li><li>检测到违反</li><li>用增加注意回应</li></ol>例：1+1 实验——屏幕后放玩具，揭示只剩 1 个（违反）vs 2 个（符合预期）。<br><br><span class='en'>Babies look longer at unexpected events.</span>`
   },
   {
-    topic: "Infant",
-    term: "Intuitive Physics ages",
-    termCn: "直觉物理的 5 原则+年龄",
-    back: "<strong>必背年龄</strong>：<br><ul><li><strong>Continuity</strong>（被挡住的东西还在 / object permanence）：<strong>2.5 月</strong></li><li><strong>Solidity</strong>（固体不穿过固体）：<strong>2.5 月</strong></li><li><strong>Cohesion</strong>（物体是完整实体）：<strong>3 月</strong></li><li><strong>Gravity</strong>（重力）：<strong>4.5 月</strong></li><li><strong>Contact</strong>（接触因果）：<strong>6-7 月</strong></li></ul><br>外加：<ul><li>Basic arithmetic (1+1=2)：<strong>5 月</strong></li><li>False belief understanding：<strong>15-18 月</strong></li><li>Probabilistic reasoning：<strong>8-11 月</strong></li></ul>"
+    topic: `Infant`,
+    term: `Intuitive Physics ages`,
+    termCn: `直觉物理的 5 原则+年龄`,
+    back: `<strong>必背年龄</strong>：<br><ul><li><strong>Continuity</strong>（被挡住的东西还在 / object permanence）：<strong>2.5 月</strong></li><li><strong>Solidity</strong>（固体不穿过固体）：<strong>2.5 月</strong></li><li><strong>Cohesion</strong>（物体是完整实体）：<strong>3 月</strong></li><li><strong>Gravity</strong>（重力）：<strong>4.5 月</strong></li><li><strong>Contact</strong>（接触因果）：<strong>6-7 月</strong></li></ul><br>外加：<ul><li>Basic arithmetic (1+1=2)：<strong>5 月</strong></li><li>False belief understanding：<strong>15-18 月</strong></li><li>Probabilistic reasoning：<strong>8-11 月</strong></li></ul>`
   },
   {
-    topic: "Infant",
-    term: "Onishi & Baillargeon (2005)",
-    termCn: "15 个月婴儿 false belief",
-    back: "发表在 <em>Science</em>。证明 <strong>15 个月的婴儿</strong>就能理解他人可以有 <strong>false beliefs</strong>。<br><br>传统 false belief task 要 <em>4 岁</em>才通过（依赖语言）。这个改良版用<strong>玩具甜瓜 + 注视时长</strong>的 violation of expectation 方法。<br><br>两种条件：<ul><li><strong>TB-yellow</strong>：agent 看到 melon 移到黄盒 → 预期她找黄盒（找绿会惊讶）</li><li><strong>FB-green</strong>：agent 相信 melon 在绿盒 → 预期她找绿盒（找黄会惊讶）</li></ul><span class='en'>Babies understand others can have beliefs different from reality.</span>"
+    topic: `Infant`,
+    term: `Onishi & Baillargeon (2005)`,
+    termCn: `15 个月婴儿 false belief`,
+    back: `发表在 <em>Science</em>。证明 <strong>15 个月的婴儿</strong>就能理解他人可以有 <strong>false beliefs</strong>。<br><br>传统 false belief task 要 <em>4 岁</em>才通过（依赖语言）。这个改良版用<strong>玩具甜瓜 + 注视时长</strong>的 violation of expectation 方法。<br><br>两种条件：<ul><li><strong>TB-yellow</strong>：agent 看到 melon 移到黄盒 → 预期她找黄盒（找绿会惊讶）</li><li><strong>FB-green</strong>：agent 相信 melon 在绿盒 → 预期她找绿盒（找黄会惊讶）</li></ul><span class='en'>Babies understand others can have beliefs different from reality.</span>`
   },
   {
-    topic: "Infant",
-    term: "Xu & Denison (2009) ping-pong balls",
-    termCn: "婴儿乒乓球概率实验",
-    back: "证明 <strong>8-11 月</strong>婴儿掌握 <strong>统计样本-总体</strong>关系。<br><br>方法：大盒子（如 75% 红/25% 白），实验者"随机"抽样。<br><br>结果：<ul><li>比例反常 → 看得更久（违反预期）</li><li><strong>关键控制</strong>：当球是从实验者<strong>口袋</strong>抽（不是从大盒子）→ 婴儿<strong>不</strong>吃惊</li></ul>结论：婴儿同时用 <em>统计推理 + Theory of Mind</em>——"她是故意从口袋抽的"。<br><br><span class='en'>Babies distinguish random vs selective (non-random) sampling.</span>"
+    topic: `Infant`,
+    term: `Xu & Denison (2009) ping-pong balls`,
+    termCn: `婴儿乒乓球概率实验`,
+    back: `证明 <strong>8-11 月</strong>婴儿掌握 <strong>统计样本-总体</strong>关系。<br><br>方法：大盒子（如 75% 红/25% 白），实验者"随机"抽样。<br><br>结果：<ul><li>比例反常 → 看得更久（违反预期）</li><li><strong>关键控制</strong>：当球是从实验者<strong>口袋</strong>抽（不是从大盒子）→ 婴儿<strong>不</strong>吃惊</li></ul>结论：婴儿同时用 <em>统计推理 + Theory of Mind</em>——"她是故意从口袋抽的"。<br><br><span class='en'>Babies distinguish random vs selective (non-random) sampling.</span>`
   },
   {
-    topic: "Infant",
-    term: "Two kinds of baby cleverness",
-    termCn: "婴儿聪明的两方面",
-    back: "<ol><li><strong>Clever in what they know</strong>（知道很多）<br><em>可能因为先天或早期获得的知识</em><br>→ intuitive physics、arithmetic、theory of mind、statistics</li><br><li><strong>Clever in how they learn</strong>（学得快）<br><em>可能因为先天学习机制</em><br>→ 按 Bayesian 方式更新信念、理性选择动作</li></ol><br>Spelke 的 <strong>hybrid 立场</strong>：<em>"babies are designed to learn"</em>——在 nativism 和 empiricism 之间。<br><br><span class='en'>Not everything is innate, but the learning mechanism is.</span>"
+    topic: `Infant`,
+    term: `Two kinds of baby cleverness`,
+    termCn: `婴儿聪明的两方面`,
+    back: `<ol><li><strong>Clever in what they know</strong>（知道很多）<br><em>可能因为先天或早期获得的知识</em><br>→ intuitive physics、arithmetic、theory of mind、statistics</li><br><li><strong>Clever in how they learn</strong>（学得快）<br><em>可能因为先天学习机制</em><br>→ 按 Bayesian 方式更新信念、理性选择动作</li></ol><br>Spelke 的 <strong>hybrid 立场</strong>：<em>"babies are designed to learn"</em>——在 nativism 和 empiricism 之间。<br><br><span class='en'>Not everything is innate, but the learning mechanism is.</span>`
   },
 
   // === Language ===
   {
-    topic: "Language",
-    term: "4 properties of language",
-    termCn: "语言的 4 个关键属性",
-    back: "<strong>Associationism 一个都解释不了，Cognitivism 都能解释：</strong><br><br><strong>Stimulus Independence</strong>（刺激独立）<br><em>在与学习语境无关的情境中说话。</em>例：Nasser 在老家学的话在飞机机舱说出来。<br><br><strong>Novelty</strong>（新颖性）<br><em>说从未遇到的句子。</em>例：Wug test 儿童把"wug"正确复数化为"wugs"，还会过度泛化（"goed"）。<br><br><strong>Productivity</strong>（生产性）<br><em>句子数无上限</em>——来自 PSG 的 <strong>recursion</strong>（S→NP VP；VP→V S 循环）。<br><br><strong>Systematicity</strong>（系统性）<br><em>知道一个句子 ≈ 知道一组相关句子</em>。知道"洋葱在水银和坩埚之间"立刻也知道"水银在洋葱和坩埚之间"。"
+    topic: `Language`,
+    term: `4 properties of language`,
+    termCn: `语言的 4 个关键属性`,
+    back: `<strong>Associationism 一个都解释不了，Cognitivism 都能解释：</strong><br><br><strong>Stimulus Independence</strong>（刺激独立）<br><em>在与学习语境无关的情境中说话。</em>例：Nasser 在老家学的话在飞机机舱说出来。<br><br><strong>Novelty</strong>（新颖性）<br><em>说从未遇到的句子。</em>例：Wug test 儿童把"wug"正确复数化为"wugs"，还会过度泛化（"goed"）。<br><br><strong>Productivity</strong>（生产性）<br><em>句子数无上限</em>——来自 PSG 的 <strong>recursion</strong>（S→NP VP；VP→V S 循环）。<br><br><strong>Systematicity</strong>（系统性）<br><em>知道一个句子 ≈ 知道一组相关句子</em>。知道"洋葱在水银和坩埚之间"立刻也知道"水银在洋葱和坩埚之间"。`
   },
   {
-    topic: "Language",
-    term: "Universal Grammar (UG)",
-    termCn: "普遍语法",
-    back: "<strong>必考！常被误解！</strong><br><br>UG <strong>不是</strong>："所有儿童出生时都知道的一组语法规则"（Exam 2 考过 → <em>False</em>）。<br><br>UG <strong>是</strong>：<em>the species-typical capacity and limits of the human mind to acquire and use language</em>——物种典型的习得和使用语言的能力和限度。<br><br>既是研究课题（"What's innate?"），也是对该课题的理论。<br><br><span class='en'>NOT a set of rules. It's the capacity itself.</span>"
+    topic: `Language`,
+    term: `Universal Grammar (UG)`,
+    termCn: `普遍语法`,
+    back: `<strong>必考！常被误解！</strong><br><br>UG <strong>不是</strong>："所有儿童出生时都知道的一组语法规则"（Exam 2 考过 → <em>False</em>）。<br><br>UG <strong>是</strong>：<em>the species-typical capacity and limits of the human mind to acquire and use language</em>——物种典型的习得和使用语言的能力和限度。<br><br>既是研究课题（"What's innate?"），也是对该课题的理论。<br><br><span class='en'>NOT a set of rules. It's the capacity itself.</span>`
   },
   {
-    topic: "Language",
-    term: "Poverty of the Stimulus (Language)",
-    termCn: "语言的刺激贫乏论证",
-    back: "<strong>Interrogative Rule 经典案例</strong>：<br><br>表面规则（错）："把第一个 are 挪到句首"<br><br>正确规则（对）：<strong>"move the main verb"</strong>——来自 main VP 的助动词前置（<em>structure-dependent rule</em>）。<br><br>例："the people you are staying with are very nice" → "<strong>are</strong> the people you are staying with ___ very nice?"（第一个 are 在从句里，要移的是后一个 main verb）<br><br>儿童掌握这种复杂结构依赖规则却没被明确教过 → <strong>必有先天 UG</strong>。"
+    topic: `Language`,
+    term: `Poverty of the Stimulus (Language)`,
+    termCn: `语言的刺激贫乏论证`,
+    back: `<strong>Interrogative Rule 经典案例</strong>：<br><br>表面规则（错）："把第一个 are 挪到句首"<br><br>正确规则（对）：<strong>"move the main verb"</strong>——来自 main VP 的助动词前置（<em>structure-dependent rule</em>）。<br><br>例："the people you are staying with are very nice" → "<strong>are</strong> the people you are staying with ___ very nice?"（第一个 are 在从句里，要移的是后一个 main verb）<br><br>儿童掌握这种复杂结构依赖规则却没被明确教过 → <strong>必有先天 UG</strong>。`
   },
   {
-    topic: "Language",
-    term: "Nicaraguan Sign Language (NSL)",
-    termCn: "尼加拉瓜手语",
-    back: "<strong>Senghas et al. (2004)</strong>——"Children creating core properties of language"。<br><br>1970s 末尼加拉瓜聋哑学校开学。早期 <em>gesturers</em> 用一个复合手势同时表达 manner（滚动）和 path（向左）。<br><br><strong>Cohort 2, 3</strong>（最新最年轻）：<strong>分开表达</strong>——先 manner 手势，再 path 手势（sequentially）——显示 <strong>combinatoric patterning</strong>。<br><br>结论：<em>Language is created by kids!</em> → 支持语言先天。<br><br>Exam 2 考过：Cohort 3 的 Maria 描述 rolling + leftward → 答案 B（sequentially separate）。"
+    topic: `Language`,
+    term: `Nicaraguan Sign Language (NSL)`,
+    termCn: `尼加拉瓜手语`,
+    back: `<strong>Senghas et al. (2004)</strong>——"Children creating core properties of language"。<br><br>1970s 末尼加拉瓜聋哑学校开学。早期 <em>gesturers</em> 用一个复合手势同时表达 manner（滚动）和 path（向左）。<br><br><strong>Cohort 2, 3</strong>（最新最年轻）：<strong>分开表达</strong>——先 manner 手势，再 path 手势（sequentially）——显示 <strong>combinatoric patterning</strong>。<br><br>结论：<em>Language is created by kids!</em> → 支持语言先天。<br><br>Exam 2 考过：Cohort 3 的 Maria 描述 rolling + leftward → 答案 B（sequentially separate）。`
   },
   {
-    topic: "Language",
-    term: "Broca's aphasia",
-    termCn: "布洛卡失语症",
-    back: "<strong>Broca's area</strong>（左额叶，"syntactic region"）损伤。<br><br>特征：<br><ul><li>说话<strong>非流利</strong>（non-fluent）</li><li><strong>无语法</strong>（agrammatical）</li><li>但<strong>意义保留</strong>——你能听出他想说什么</li></ul><br>经典视频：Cookie Theft 图片，患者说得断断续续但意思清楚。<br><br><span class='en'>Intact meaning, impaired syntax.</span>"
+    topic: `Language`,
+    term: `Broca's aphasia`,
+    termCn: `布洛卡失语症`,
+    back: `<strong>Broca's area</strong>（左额叶，"syntactic region"）损伤。<br><br>特征：<br><ul><li>说话<strong>非流利</strong>（non-fluent）</li><li><strong>无语法</strong>（agrammatical）</li><li>但<strong>意义保留</strong>——你能听出他想说什么</li></ul><br>经典视频：Cookie Theft 图片，患者说得断断续续但意思清楚。<br><br><span class='en'>Intact meaning, impaired syntax.</span>`
   },
   {
-    topic: "Language",
-    term: "Wernicke's aphasia",
-    termCn: "韦尼克失语症",
-    back: "<strong>Wernicke's area</strong>（左颞叶，"semantic region"）损伤。<br><br>特征：<ul><li>说话<strong>流利</strong>（fluent）</li><li>语法<strong>表面正确</strong></li><li>但<strong>"word salad"——完全无意义</strong></li></ul><br>Exam 2 考过 Mr. S 的例子（答案是 Wernicke）。<br><br><span class='en'>Intact syntax, impaired meaning.</span>"
+    topic: `Language`,
+    term: `Wernicke's aphasia`,
+    termCn: `韦尼克失语症`,
+    back: `<strong>Wernicke's area</strong>（左颞叶，"semantic region"）损伤。<br><br>特征：<ul><li>说话<strong>流利</strong>（fluent）</li><li>语法<strong>表面正确</strong></li><li>但<strong>"word salad"——完全无意义</strong></li></ul><br>Exam 2 考过 Mr. S 的例子（答案是 Wernicke）。<br><br><span class='en'>Intact syntax, impaired meaning.</span>`
   },
   {
-    topic: "Language",
-    term: "Double Dissociation (语言)",
-    termCn: "语言的双重分离",
-    back: "<strong>两组患者显示<em>相反</em>的损伤模式</strong>→ 证明两种能力是神经独立的。<br><br>语言领域的经典双向分离：<br><ul><li><strong>Broca's</strong>（句法坏/语义保留）vs <strong>Wernicke's</strong>（语义坏/句法保留）</li><li><strong>Williams syndrome</strong>（整体认知低但语言相对保留）vs <strong>Down syndrome</strong>（IQ 匹配，但语言特别受损）</li></ul><br>结论：<em>语言是独立的计算能力</em>——支持语言模块性。<br><br><span class='en'>Two groups show opposite patterns of impaired vs intact function.</span>"
+    topic: `Language`,
+    term: `Double Dissociation (语言)`,
+    termCn: `语言的双重分离`,
+    back: `<strong>两组患者显示<em>相反</em>的损伤模式</strong>→ 证明两种能力是神经独立的。<br><br>语言领域的经典双向分离：<br><ul><li><strong>Broca's</strong>（句法坏/语义保留）vs <strong>Wernicke's</strong>（语义坏/句法保留）</li><li><strong>Williams syndrome</strong>（整体认知低但语言相对保留）vs <strong>Down syndrome</strong>（IQ 匹配，但语言特别受损）</li></ul><br>结论：<em>语言是独立的计算能力</em>——支持语言模块性。<br><br><span class='en'>Two groups show opposite patterns of impaired vs intact function.</span>`
   },
   {
-    topic: "Language",
-    term: "Hickok et al. (2002) sign language",
-    termCn: "手语脑损伤研究",
-    back: "失聪手语者的手语障碍 <strong>和听力正常人的 Broca/Wernicke 失语模式完全一样</strong>。<br><br>结论：<strong>语言组织不依赖特定感觉通道</strong>（不管是声音、视觉、还是发声）。<br><br>Broca/Wernicke 处理的是<em>语言的抽象结构</em>，不是声音或视觉本身。<br><br><span class='en'>Language is not tied to a specific sensory modality.</span>"
+    topic: `Language`,
+    term: `Hickok et al. (2002) sign language`,
+    termCn: `手语脑损伤研究`,
+    back: `失聪手语者的手语障碍 <strong>和听力正常人的 Broca/Wernicke 失语模式完全一样</strong>。<br><br>结论：<strong>语言组织不依赖特定感觉通道</strong>（不管是声音、视觉、还是发声）。<br><br>Broca/Wernicke 处理的是<em>语言的抽象结构</em>，不是声音或视觉本身。<br><br><span class='en'>Language is not tied to a specific sensory modality.</span>`
   },
   {
-    topic: "Language",
-    term: "Cognitivism vs Associationism",
-    termCn: "认知主义 vs 联想主义",
-    back: "<strong>Chomsky vs Skinner</strong> 的对立：<br><br>1957 Skinner 出版《Verbal Behavior》<br>1959 Chomsky 发表书评——<em>被视为对 Skinner 整个理论框架的致命一击</em><br><br><strong>Associationism (Skinner)</strong>：<ul><li>头里：sentence-context 联想</li><li>学习：instrumental conditioning</li><li>4 个语言属性都 ❌</li></ul><br><strong>Cognitivism (Chomsky)</strong>：<ul><li>头里：<em>phrase-structure grammar</em>（抽象组合规则）</li><li>学习：基本先天（UG 一部分）</li><li>4 个语言属性都 ✅</li></ul>"
+    topic: `Language`,
+    term: `Cognitivism vs Associationism`,
+    termCn: `认知主义 vs 联想主义`,
+    back: `<strong>Chomsky vs Skinner</strong> 的对立：<br><br>1957 Skinner 出版《Verbal Behavior》<br>1959 Chomsky 发表书评——<em>被视为对 Skinner 整个理论框架的致命一击</em><br><br><strong>Associationism (Skinner)</strong>：<ul><li>头里：sentence-context 联想</li><li>学习：instrumental conditioning</li><li>4 个语言属性都 ❌</li></ul><br><strong>Cognitivism (Chomsky)</strong>：<ul><li>头里：<em>phrase-structure grammar</em>（抽象组合规则）</li><li>学习：基本先天（UG 一部分）</li><li>4 个语言属性都 ✅</li></ul>`
   },
   {
-    topic: "Language",
-    term: "Phrase Structure Grammar (PSG)",
-    termCn: "短语结构语法",
-    back: "重写规则（rewrite rules）定义语言的结构。<br><br>典型规则：<br><code>S → NP VP</code><br><code>NP → Det N</code><br><code>NP → NP PP</code><br><code>VP → V NP</code><br><code>VP → VP PP</code><br><code>PP → P NP</code><br><br><strong>Recursive</strong>（递归）：允许一个类别分支回到自己（S→NP VP；VP→V S）→ 生产性（productivity）！<br><br>考试会给你规则让你画 parse tree。"
+    topic: `Language`,
+    term: `Phrase Structure Grammar (PSG)`,
+    termCn: `短语结构语法`,
+    back: `重写规则（rewrite rules）定义语言的结构。<br><br>典型规则：<br><code>S → NP VP</code><br><code>NP → Det N</code><br><code>NP → NP PP</code><br><code>VP → V NP</code><br><code>VP → VP PP</code><br><code>PP → P NP</code><br><br><strong>Recursive</strong>（递归）：允许一个类别分支回到自己（S→NP VP；VP→V S）→ 生产性（productivity）！<br><br>考试会给你规则让你画 parse tree。`
   },
   {
-    topic: "Language",
-    term: "Syntactic Ambiguity",
-    termCn: "句法歧义",
-    back: "<strong>必考画树题</strong>：<br><br>"The bear attended the picnic with cake"<br><br><strong>Meaning 1</strong>（蛋糕在 picnic 上）<br>关键规则：<code>NP → NP PP</code><br>[the picnic] 和 [with cake] 组成 NP<br><br><strong>Meaning 2</strong>（熊带蛋糕来）<br>关键规则：<code>VP → VP PP</code><br>[attended the picnic] 和 [with cake] 组成 VP<br><br>语言处理的 4 个核心声明之一：<em>必须处理 ambiguous input</em>。"
+    topic: `Language`,
+    term: `Syntactic Ambiguity`,
+    termCn: `句法歧义`,
+    back: `<strong>必考画树题</strong>：<br><br>"The bear attended the picnic with cake"<br><br><strong>Meaning 1</strong>（蛋糕在 picnic 上）<br>关键规则：<code>NP → NP PP</code><br>[the picnic] 和 [with cake] 组成 NP<br><br><strong>Meaning 2</strong>（熊带蛋糕来）<br>关键规则：<code>VP → VP PP</code><br>[attended the picnic] 和 [with cake] 组成 VP<br><br>语言处理的 4 个核心声明之一：<em>必须处理 ambiguous input</em>。`
   },
 
   // === Innateness ===
   {
-    topic: "Innateness",
-    term: "Samuels (2004) innateness definitions",
-    termCn: "Innateness 的 5 种定义都有问题",
-    back: "<strong>没有共识定义。</strong>所有候选都有反例：<br><ol><li>"Present at birth" ❌ <em>反例：牙齿、胡子</em></li><li>"Product of internal causes" ❌ <em>皮肤消化也是内部原因</em></li><li>"Product of the genes" ❌ <em>太狭窄</em></li><li>"High heritability" ❌ <em>"天是蓝的"谁都知道但显然不 innate</em></li><li>"Reliably develops across normal environments" ❌ <em>一些常识也满足</em></li></ol><br>Exam 会考"出生时就有"的反例——答牙齿/胡子。"
+    topic: `Innateness`,
+    term: `Samuels (2004) innateness definitions`,
+    termCn: `Innateness 的 5 种定义都有问题`,
+    back: `<strong>没有共识定义。</strong>所有候选都有反例：<br><ol><li>"Present at birth" ❌ <em>反例：牙齿、胡子</em></li><li>"Product of internal causes" ❌ <em>皮肤消化也是内部原因</em></li><li>"Product of the genes" ❌ <em>太狭窄</em></li><li>"High heritability" ❌ <em>"天是蓝的"谁都知道但显然不 innate</em></li><li>"Reliably develops across normal environments" ❌ <em>一些常识也满足</em></li></ol><br>Exam 会考"出生时就有"的反例——答牙齿/胡子。`
   },
 
   // === Computation ===
   {
-    topic: "Computation",
-    term: "Computational Theory of Mind (CTM)",
-    termCn: "心智计算理论",
-    back: "<strong>核心命题</strong>：<em>"All mentation is computation."</em> 所有思维就是计算。<br><br>Pinker: <em>"The mind is a system of organs of computation, designed by natural selection."</em><br><br>强推论：<ul><li>（部分）解决 <strong>mind-body problem</strong>：心理状态 = 在物理基础上执行算法（软件 vs 硬件的类比）</li><li>CTM + Multiple Realizability → 心理状态在物理状态中<em>实现但不等于</em>物理状态</li></ul><br><strong>只解决 Chalmers 的 "easy problem"，没解决 "hard problem"（qualia）。</strong>"
+    topic: `Computation`,
+    term: `Computational Theory of Mind (CTM)`,
+    termCn: `心智计算理论`,
+    back: `<strong>核心命题</strong>：<em>"All mentation is computation."</em> 所有思维就是计算。<br><br>Pinker: <em>"The mind is a system of organs of computation, designed by natural selection."</em><br><br>强推论：<ul><li>（部分）解决 <strong>mind-body problem</strong>：心理状态 = 在物理基础上执行算法（软件 vs 硬件的类比）</li><li>CTM + Multiple Realizability → 心理状态在物理状态中<em>实现但不等于</em>物理状态</li></ul><br><strong>只解决 Chalmers 的 "easy problem"，没解决 "hard problem"（qualia）。</strong>`
   },
   {
-    topic: "Computation",
-    term: "Turing Machine 5 primitives",
-    termCn: "图灵机的 5 个原始组件",
-    back: "Turing 给了计算的 <strong>minimal formalization</strong>：<ol><li><strong>Tape</strong>（纸带）：每格空白或单个符号</li><li><strong>Symbols</strong>（符号集）：有限</li><li><strong>Head</strong>（读写头）：一次读/写一格，可左右移动</li><li><strong>State memory</strong>（状态记忆）：有限内部状态</li><li><strong>Rules</strong>（规则）：<em>"If in state S5 and read X, write Y, move left, change to Sn"</em></li></ol>"
+    topic: `Computation`,
+    term: `Turing Machine 5 primitives`,
+    termCn: `图灵机的 5 个原始组件`,
+    back: `Turing 给了计算的 <strong>minimal formalization</strong>：<ol><li><strong>Tape</strong>（纸带）：每格空白或单个符号</li><li><strong>Symbols</strong>（符号集）：有限</li><li><strong>Head</strong>（读写头）：一次读/写一格，可左右移动</li><li><strong>State memory</strong>（状态记忆）：有限内部状态</li><li><strong>Rules</strong>（规则）：<em>"If in state S5 and read X, write Y, move left, change to Sn"</em></li></ol>`
   },
   {
-    topic: "Computation",
-    term: "Universal Turing Machine (UTM)",
-    termCn: "通用图灵机",
-    back: "特殊 Turing Machine，<strong>接受 program + input</strong> 作为输入。<br><br>性质：<ul><li><strong>Maximally flexible</strong>（最大灵活）</li><li><strong>Maximally powerful</strong>（最大强大）</li><li>可执行任何算法、计算任何可计算函数</li></ul><br><strong>重要陷阱</strong>：<em>有 uncomputable functions</em>——任何物理机器都解不了！<br><br>Exam 2 考过：UTM 可以计算"所有可想象的 input-output mappings"？答案 <strong>否</strong>。"
+    topic: `Computation`,
+    term: `Universal Turing Machine (UTM)`,
+    termCn: `通用图灵机`,
+    back: `特殊 Turing Machine，<strong>接受 program + input</strong> 作为输入。<br><br>性质：<ul><li><strong>Maximally flexible</strong>（最大灵活）</li><li><strong>Maximally powerful</strong>（最大强大）</li><li>可执行任何算法、计算任何可计算函数</li></ul><br><strong>重要陷阱</strong>：<em>有 uncomputable functions</em>——任何物理机器都解不了！<br><br>Exam 2 考过：UTM 可以计算"所有可想象的 input-output mappings"？答案 <strong>否</strong>。`
   },
   {
-    topic: "Computation",
-    term: "Church-Turing Thesis",
-    termCn: "Church-Turing 论题",
-    back: "<strong>所有"可被某台物理机器计算"的函数都可以被某台 Turing Machine 计算</strong>。<br><br>Venn 图：<ul><li>最外圈：All conceivable functions（无限多，含 uncomputable）</li><li>内圈 = <em>computable by some Turing Machine</em> = <em>computable by a single UTM</em> = <em>computable by any physical machine</em></li></ul><br><span class='en'>Turing Machines are maximally powerful.</span>"
+    topic: `Computation`,
+    term: `Church-Turing Thesis`,
+    termCn: `Church-Turing 论题`,
+    back: `<strong>所有"可被某台物理机器计算"的函数都可以被某台 Turing Machine 计算</strong>。<br><br>Venn 图：<ul><li>最外圈：All conceivable functions（无限多，含 uncomputable）</li><li>内圈 = <em>computable by some Turing Machine</em> = <em>computable by a single UTM</em> = <em>computable by any physical machine</em></li></ul><br><span class='en'>Turing Machines are maximally powerful.</span>`
   },
   {
-    topic: "Computation",
-    term: "Turing Test for intelligence",
-    termCn: "图灵测试",
-    back: "核心思想：<strong>intelligence = input-output equivalence</strong>。<br><br>判官文字聊天分不出哪个是人、哪个是机器 → 机器有智能。<br><br>论证：<ol><li>屏幕后的人是 intelligent</li><li>机器与人 input-output 等价</li><li>所以机器也 intelligent</li></ol><br><strong>Jones & Bergen (2025)</strong>：GPT-4.5 with "persona" prompt 通过三方 Turing Test（史上首次）。但 Bollard 教授批评——给 persona prompt 类似作弊纸条。"
+    topic: `Computation`,
+    term: `Turing Test for intelligence`,
+    termCn: `图灵测试`,
+    back: `核心思想：<strong>intelligence = input-output equivalence</strong>。<br><br>判官文字聊天分不出哪个是人、哪个是机器 → 机器有智能。<br><br>论证：<ol><li>屏幕后的人是 intelligent</li><li>机器与人 input-output 等价</li><li>所以机器也 intelligent</li></ol><br><strong>Jones & Bergen (2025)</strong>：GPT-4.5 with "persona" prompt 通过三方 Turing Test（史上首次）。但 Bollard 教授批评——给 persona prompt 类似作弊纸条。`
   },
 
   // === Emotions ===
   {
-    topic: "Emotions",
-    term: "Affect Programs",
-    termCn: "情感程序",
-    back: "<strong>情绪 = 特殊的 computational affect programs。</strong><br><br>包含两部分：<ul><li><strong>Appraisal</strong>（评估）：情境与目标/优先级的匹配程度</li><li><strong>Effector Program</strong>（效应器程序）：触发 cognitive / physiological / motoric / experiential 变化 + 动作倾向</li></ul>格式："If situation is X type, then do Y"。<br><br>这回答了"CTM 能不能解释情绪"的反驳——能，至少部分情绪可作为 affect programs 解释。"
+    topic: `Emotions`,
+    term: `Affect Programs`,
+    termCn: `情感程序`,
+    back: `<strong>情绪 = 特殊的 computational affect programs。</strong><br><br>包含两部分：<ul><li><strong>Appraisal</strong>（评估）：情境与目标/优先级的匹配程度</li><li><strong>Effector Program</strong>（效应器程序）：触发 cognitive / physiological / motoric / experiential 变化 + 动作倾向</li></ul>格式："If situation is X type, then do Y"。<br><br>这回答了"CTM 能不能解释情绪"的反驳——能，至少部分情绪可作为 affect programs 解释。`
   },
   {
-    topic: "Emotions",
-    term: "4 Takes on Emotion",
-    termCn: "情绪理论的 4 个版本",
-    back: "<strong>Take 1: James-Lange</strong><br>刺激 → 身体反应 → 感知身体 → 感受<br>❌ 身体反应太慢 + 多种情绪共享生理状态<br><br><strong>Take 2: Schachter-Singer</strong><br>刺激 → 身体 → 有意识解释 → 感受<br>✅ Dutton & Aron 吊桥实验<br>❌ 太 conscious<br><br><strong>Take 3: Standard Appraisal</strong><br>刺激 → 有意识 appraisal → effector program → 身体+感受<br>✅ Lazarus 录像实验<br>❌ 太依赖 self-report；解释不了"明知不该怕还是怕"<br><br><strong>Take 4（采纳）: LeDoux 双通路</strong>"
+    topic: `Emotions`,
+    term: `4 Takes on Emotion`,
+    termCn: `情绪理论的 4 个版本`,
+    back: `<strong>Take 1: James-Lange</strong><br>刺激 → 身体反应 → 感知身体 → 感受<br>❌ 身体反应太慢 + 多种情绪共享生理状态<br><br><strong>Take 2: Schachter-Singer</strong><br>刺激 → 身体 → 有意识解释 → 感受<br>✅ Dutton & Aron 吊桥实验<br>❌ 太 conscious<br><br><strong>Take 3: Standard Appraisal</strong><br>刺激 → 有意识 appraisal → effector program → 身体+感受<br>✅ Lazarus 录像实验<br>❌ 太依赖 self-report；解释不了"明知不该怕还是怕"<br><br><strong>Take 4（采纳）: LeDoux 双通路</strong>`
   },
   {
-    topic: "Emotions",
-    term: "LeDoux Low Road / High Road",
-    termCn: "LeDoux 恐惧双通路",
-    back: "<strong>Low Road</strong>（快、无意识）：<br><code>刺激 → thalamus → amygdala → fear effector program</code><br><br><strong>High Road</strong>（慢、有意识）：<br><code>刺激 → thalamus → cortex（有意识解释）→ amygdala → fear effector program</code><br><br>经典例：退伍兵听 car backfire → Low Road 立即触发恐惧，High Road 后知后觉"不是枪声"。<br><br>能解释：fast/slow、意识/无意识、"明知不该怕还是怕"（两条路冲突）。"
+    topic: `Emotions`,
+    term: `LeDoux Low Road / High Road`,
+    termCn: `LeDoux 恐惧双通路`,
+    back: `<strong>Low Road</strong>（快、无意识）：<br><code>刺激 → thalamus → amygdala → fear effector program</code><br><br><strong>High Road</strong>（慢、有意识）：<br><code>刺激 → thalamus → cortex（有意识解释）→ amygdala → fear effector program</code><br><br>经典例：退伍兵听 car backfire → Low Road 立即触发恐惧，High Road 后知后觉"不是枪声"。<br><br>能解释：fast/slow、意识/无意识、"明知不该怕还是怕"（两条路冲突）。`
   },
   {
-    topic: "Emotions",
-    term: "Amygdala and fear",
-    termCn: "杏仁核与恐惧",
-    back: "<strong>Amygdala</strong>（杏仁核）：颞叶内侧，近 hippocampus 和 basal ganglia。<br><br><strong>损伤实验</strong>：amygdala lesion → Low Road 和 High Road <em>都</em>无法激活 fear effector。<br><br>缺陷是 <strong>selective</strong>——只影响 fear，其他情绪能力保留。<br><br>Fear processing 是：<ul><li>Fast ✓</li><li>Mandatory ✓</li><li>Domain-specific ✓</li><li>Neurally discretely localized ✓</li><li>Informationally encapsulated ✓（明知安全仍害怕）</li></ul>→ <strong>非常 modular！</strong>"
+    topic: `Emotions`,
+    term: `Amygdala and fear`,
+    termCn: `杏仁核与恐惧`,
+    back: `<strong>Amygdala</strong>（杏仁核）：颞叶内侧，近 hippocampus 和 basal ganglia。<br><br><strong>损伤实验</strong>：amygdala lesion → Low Road 和 High Road <em>都</em>无法激活 fear effector。<br><br>缺陷是 <strong>selective</strong>——只影响 fear，其他情绪能力保留。<br><br>Fear processing 是：<ul><li>Fast ✓</li><li>Mandatory ✓</li><li>Domain-specific ✓</li><li>Neurally discretely localized ✓</li><li>Informationally encapsulated ✓（明知安全仍害怕）</li></ul>→ <strong>非常 modular！</strong>`
   },
   {
-    topic: "Emotions",
-    term: "Ekman's 6 basic emotions",
-    termCn: "Ekman 的 6 种基本情绪",
-    back: "跨文化面部表情研究（1967, 1971）：<br><ol><li><strong>Happiness</strong>（快乐）</li><li><strong>Sadness</strong>（悲伤）</li><li><strong>Anger</strong>（愤怒）</li><li><strong>Fear</strong>（恐惧）</li><li><strong>Disgust</strong>（厌恶）</li><li><strong>Surprise</strong>（惊讶）</li></ol><br>支持 <strong>universality</strong>（Darwin：某些表情是 instinctual，跨物种同源）。<br><br>关于 higher emotions（love, pride, contempt...）：<ul><li>独立 affect programs？</li><li>基本情绪的混合？</li><li>社会建构？</li></ul>没定论。"
+    topic: `Emotions`,
+    term: `Ekman's 6 basic emotions`,
+    termCn: `Ekman 的 6 种基本情绪`,
+    back: `跨文化面部表情研究（1967, 1971）：<br><ol><li><strong>Happiness</strong>（快乐）</li><li><strong>Sadness</strong>（悲伤）</li><li><strong>Anger</strong>（愤怒）</li><li><strong>Fear</strong>（恐惧）</li><li><strong>Disgust</strong>（厌恶）</li><li><strong>Surprise</strong>（惊讶）</li></ol><br>支持 <strong>universality</strong>（Darwin：某些表情是 instinctual，跨物种同源）。<br><br>关于 higher emotions（love, pride, contempt...）：<ul><li>独立 affect programs？</li><li>基本情绪的混合？</li><li>社会建构？</li></ul>没定论。`
   },
   {
-    topic: "Emotions",
-    term: "Dutton & Aron (1974) bridge study",
-    termCn: "吊桥实验",
-    back: "支持 <strong>Schachter-Singer Two-Factor Theory</strong>。<br><br>方法：男性过<strong>摇晃高吊桥</strong> vs <strong>低稳桥</strong>，然后遇女助手（给电话让他问问题）。<br><br>结果：<strong>吊桥组</strong>打电话约女助手的比例 <strong>显著更高</strong>。<br><br>解释：身体唤起（心跳、肾上腺素）被<em>错误归因</em>为对女性的吸引。Arousal + cognitive interpretation = emotion。<br><br><span class='en'>Misattribution of arousal.</span>"
+    topic: `Emotions`,
+    term: `Dutton & Aron (1974) bridge study`,
+    termCn: `吊桥实验`,
+    back: `支持 <strong>Schachter-Singer Two-Factor Theory</strong>。<br><br>方法：男性过<strong>摇晃高吊桥</strong> vs <strong>低稳桥</strong>，然后遇女助手（给电话让他问问题）。<br><br>结果：<strong>吊桥组</strong>打电话约女助手的比例 <strong>显著更高</strong>。<br><br>解释：身体唤起（心跳、肾上腺素）被<em>错误归因</em>为对女性的吸引。Arousal + cognitive interpretation = emotion。<br><br><span class='en'>Misattribution of arousal.</span>`
   },
 
   // === Rationality ===
   {
-    topic: "Rationality",
-    term: "4 Takes on Rationality",
-    termCn: "理性决策的 4 个版本",
-    back: "<strong>Take 1: Maximize Objective Value</strong><br>❌ 无法处理概率<br><br><strong>Take 2: Maximize Expected Objective Value</strong>（Pascal 1654）<br>EV = Σ(value × prob)<br>❌ 无法处理 diminishing marginal utility + 非金钱决策<br><em>（coin toss 例子：期望值 +$50 但多数人不赌）</em><br><br><strong>Take 3: Maximize Expected Utility</strong>（Bernoulli）<br>用 subjective utility 替换 objective value<br>❌ 无法处理 delay<br><em>（$999 now vs $1000 in a month）</em><br><br><strong>Take 4（采纳）: Maximize Long-term Discounted Expected Utility</strong><br><span class='formula'>Discounted utility of "U at delay x" = U × γˣ</span>"
+    topic: `Rationality`,
+    term: `4 Takes on Rationality`,
+    termCn: `理性决策的 4 个版本`,
+    back: `<strong>Take 1: Maximize Objective Value</strong><br>❌ 无法处理概率<br><br><strong>Take 2: Maximize Expected Objective Value</strong>（Pascal 1654）<br>EV = Σ(value × prob)<br>❌ 无法处理 diminishing marginal utility + 非金钱决策<br><em>（coin toss 例子：期望值 +$50 但多数人不赌）</em><br><br><strong>Take 3: Maximize Expected Utility</strong>（Bernoulli）<br>用 subjective utility 替换 objective value<br>❌ 无法处理 delay<br><em>（$999 now vs $1000 in a month）</em><br><br><strong>Take 4（采纳）: Maximize Long-term Discounted Expected Utility</strong><br><span class='formula'>Discounted utility of "U at delay x" = U × γˣ</span>`
   },
   {
-    topic: "Rationality",
-    term: "Diminishing Marginal Utility",
-    termCn: "边际效用递减",
-    back: "每多一块钱带来的 utility 越来越少。<br><br>Rashi 的 utility 曲线示例：<br><ul><li>$10M → <strong>500 utiles</strong></li><li>$20M → <strong>只有 650 utiles</strong>（不是 1000！）</li></ul>所以她选确定 $10M（500 utiles）胜过 50/50 赌 $20M（期望效用只有 325 utiles）。<br><br>Utility <strong>不可跨人比较</strong>——只表达单人对选项的相对偏好。<br><br>Increasing marginal utility 理论可能但罕见。"
+    topic: `Rationality`,
+    term: `Diminishing Marginal Utility`,
+    termCn: `边际效用递减`,
+    back: `每多一块钱带来的 utility 越来越少。<br><br>Rashi 的 utility 曲线示例：<br><ul><li>$10M → <strong>500 utiles</strong></li><li>$20M → <strong>只有 650 utiles</strong>（不是 1000！）</li></ul>所以她选确定 $10M（500 utiles）胜过 50/50 赌 $20M（期望效用只有 325 utiles）。<br><br>Utility <strong>不可跨人比较</strong>——只表达单人对选项的相对偏好。<br><br>Increasing marginal utility 理论可能但罕见。`
   },
   {
-    topic: "Rationality",
-    term: "Exponential Discounting",
-    termCn: "指数贴现",
-    back: "<strong>公式：Discounted utility of "U at delay x" = U × γˣ</strong><br><br>γ (gamma) ∈ (0, 1) 是贴现率，x 是延迟时长。<br><br>练习例：<ul><li>Natalia γ=0.95/周，100 utiles in 2 weeks → <em>100 × 0.95² = 90.25 utiles</em></li><li>Ricky γ=0.50/年，100 utiles in 3 years → <em>100 × 0.5³ = 12.5 utiles</em></li><li>γ=0.70/月：$1000 in 1 month = 700 utiles <em>&lt;</em> $999 now = 999 utiles → 选 now</li></ul>"
+    topic: `Rationality`,
+    term: `Exponential Discounting`,
+    termCn: `指数贴现`,
+    back: `<strong>公式：Discounted utility of "U at delay x" = U × γˣ</strong><br><br>γ (gamma) ∈ (0, 1) 是贴现率，x 是延迟时长。<br><br>练习例：<ul><li>Natalia γ=0.95/周，100 utiles in 2 weeks → <em>100 × 0.95² = 90.25 utiles</em></li><li>Ricky γ=0.50/年，100 utiles in 3 years → <em>100 × 0.5³ = 12.5 utiles</em></li><li>γ=0.70/月：$1000 in 1 month = 700 utiles <em>&lt;</em> $999 now = 999 utiles → 选 now</li></ul>`
   },
   {
-    topic: "Rationality",
-    term: "Representativeness Heuristic",
-    termCn: "代表性启发",
-    back: "<strong>基于相似度判断概率。</strong><br><br><strong>Linda Problem</strong>（Kahneman & Tversky 1982）：<br>林达 31 岁、哲学专业、反核示威。(f) 银行柜员 vs (h) 银行柜员+女权？<br><strong>89% 说 (h) 更可能 → Conjunction Fallacy（合取谬误）</strong>（错！因为 h 是 f 的子集）。<br><br><strong>Engineer/Lawyer Problem</strong>：<br>组 1 库 30 工程师/70 律师；组 2 反过来。都给同样的 Jack 描述。<br>两组都估 ~50% → <strong>Base rate neglect（基率忽略）</strong>。<br><br>改成<em>频率表述</em>时错误率从 89% 降到 22%（进化心理学回应）。"
+    topic: `Rationality`,
+    term: `Representativeness Heuristic`,
+    termCn: `代表性启发`,
+    back: `<strong>基于相似度判断概率。</strong><br><br><strong>Linda Problem</strong>（Kahneman & Tversky 1982）：<br>林达 31 岁、哲学专业、反核示威。(f) 银行柜员 vs (h) 银行柜员+女权？<br><strong>89% 说 (h) 更可能 → Conjunction Fallacy（合取谬误）</strong>（错！因为 h 是 f 的子集）。<br><br><strong>Engineer/Lawyer Problem</strong>：<br>组 1 库 30 工程师/70 律师；组 2 反过来。都给同样的 Jack 描述。<br>两组都估 ~50% → <strong>Base rate neglect（基率忽略）</strong>。<br><br>改成<em>频率表述</em>时错误率从 89% 降到 22%（进化心理学回应）。`
   },
   {
-    topic: "Rationality",
-    term: "Availability Heuristic",
-    termCn: "可用性启发",
-    back: "<strong>基于"例子易出现的程度"判断频率。</strong><br><br><strong>N-letter Problem</strong>：<br>"以 N 开头 vs N 在第三位，哪个单词多？"<br>多数人说 N 开头（错——实际第三位更多）。对 K, L, R, V 同样。<br><br><strong>Assertiveness Experiment</strong>：<br>组 1 列 6 个 assertive 的例子；组 2 列 12 个。<br><strong>组 2 评自己更不 assertive</strong>（列 12 个太难 → "我其实不 assertive"）。"
+    topic: `Rationality`,
+    term: `Availability Heuristic`,
+    termCn: `可用性启发`,
+    back: `<strong>基于"例子易出现的程度"判断频率。</strong><br><br><strong>N-letter Problem</strong>：<br>"以 N 开头 vs N 在第三位，哪个单词多？"<br>多数人说 N 开头（错——实际第三位更多）。对 K, L, R, V 同样。<br><br><strong>Assertiveness Experiment</strong>：<br>组 1 列 6 个 assertive 的例子；组 2 列 12 个。<br><strong>组 2 评自己更不 assertive</strong>（列 12 个太难 → "我其实不 assertive"）。`
   },
   {
-    topic: "Rationality",
-    term: "Affect Heuristic",
-    termCn: "情感启发",
-    back: "<strong>基于 gut 情感反应做复杂判断。</strong><br>Kahneman: <em>"最重要的启发式研究进展"</em>。<br><br><strong>Ford 股票例子</strong>（Thinking Fast and Slow）：<br>CEO 投几千万 Ford 股票——理由是他在车展喜欢 Ford 车。他把"该投 Ford 股票？"替换成了"我喜欢 Ford 车？"<br><br><strong>Happiness/Dating 实验</strong>：<br>先问整体幸福再问约会 → 相关 ~0<br>先问约会再问幸福 → 相关 0.66<br>约会情感替换了幸福判断。"
+    topic: `Rationality`,
+    term: `Affect Heuristic`,
+    termCn: `情感启发`,
+    back: `<strong>基于 gut 情感反应做复杂判断。</strong><br>Kahneman: <em>"最重要的启发式研究进展"</em>。<br><br><strong>Ford 股票例子</strong>（Thinking Fast and Slow）：<br>CEO 投几千万 Ford 股票——理由是他在车展喜欢 Ford 车。他把"该投 Ford 股票？"替换成了"我喜欢 Ford 车？"<br><br><strong>Happiness/Dating 实验</strong>：<br>先问整体幸福再问约会 → 相关 ~0<br>先问约会再问幸福 → 相关 0.66<br>约会情感替换了幸福判断。`
   },
   {
-    topic: "Rationality",
-    term: "Framing Effects",
-    termCn: "框架效应",
-    back: "同一问题的不同表述 → 不同选择。<br><br><strong>Asian Disease Problem</strong>（经典）：<br>600 人会死于疾病，两方案选一。<br><br><strong>Group 1（gain framing）</strong>：<ul><li>A: 200 人 saved → <em>多数选</em></li><li>B: 1/3 救 600 / 2/3 救 0</li></ul><strong>Group 2（loss framing）</strong>：<ul><li>C: 400 人 die</li><li>D: 1/3 零死 / 2/3 600 死 → <em>多数选</em></li></ul>A=C, B=D（数学等价），但 framing 翻转选择。"
+    topic: `Rationality`,
+    term: `Framing Effects`,
+    termCn: `框架效应`,
+    back: `同一问题的不同表述 → 不同选择。<br><br><strong>Asian Disease Problem</strong>（经典）：<br>600 人会死于疾病，两方案选一。<br><br><strong>Group 1（gain framing）</strong>：<ul><li>A: 200 人 saved → <em>多数选</em></li><li>B: 1/3 救 600 / 2/3 救 0</li></ul><strong>Group 2（loss framing）</strong>：<ul><li>C: 400 人 die</li><li>D: 1/3 零死 / 2/3 600 死 → <em>多数选</em></li></ul>A=C, B=D（数学等价），但 framing 翻转选择。`
   },
   {
-    topic: "Rationality",
-    term: "Bat and ball problem",
-    termCn: "球棒和球问题",
-    back: "<em>为什么 System 2 不监控？</em><br><br>球棒和球一共 <strong>$1.10</strong>。球棒比球贵 <strong>$1</strong>。球多少钱？<br><br><strong>直觉答案（错）</strong>：$0.10<br><strong>正确答案</strong>：<em>$0.05</em><br>（球棒=球+$1，所以球棒+球=2×球+$1=$1.10，球=$0.05）<br><br>约 <strong>50% 普林斯顿和密歇根学生答错</strong>！<br><br>Kahneman: <em>"We don't actually use System 2 monitoring very much."</em>"
+    topic: `Rationality`,
+    term: `Bat and ball problem`,
+    termCn: `球棒和球问题`,
+    back: `<em>为什么 System 2 不监控？</em><br><br>球棒和球一共 <strong>$1.10</strong>。球棒比球贵 <strong>$1</strong>。球多少钱？<br><br><strong>直觉答案（错）</strong>：$0.10<br><strong>正确答案</strong>：<em>$0.05</em><br>（球棒=球+$1，所以球棒+球=2×球+$1=$1.10，球=$0.05）<br><br>约 <strong>50% 普林斯顿和密歇根学生答错</strong>！<br><br>Kahneman: <em>"We don't actually use System 2 monitoring very much."</em>`
   },
   {
-    topic: "Rationality",
-    term: "Cheater Detection Module",
-    termCn: "骗子侦测模块",
-    back: "<strong>Cosmides & Tooby</strong>——人类有先天的 domain-specific 模块处理<strong>社会契约规则</strong>。<br><br><strong>Wason Selection Task</strong>：<br>抽象版："X on one side → 3 on other"<br>多数做错（应翻 X + 7）<br><br>社会契约版："drink beer → must be over 18"<br><strong>绝大多数做对</strong><br><br>结构相同，但大脑有专门处理社会契约的模块。<br><br>这是 dual process 的另一个例子（Cheater Detection Module vs Central Cognition）。"
+    topic: `Rationality`,
+    term: `Cheater Detection Module`,
+    termCn: `骗子侦测模块`,
+    back: `<strong>Cosmides & Tooby</strong>——人类有先天的 domain-specific 模块处理<strong>社会契约规则</strong>。<br><br><strong>Wason Selection Task</strong>：<br>抽象版："X on one side → 3 on other"<br>多数做错（应翻 X + 7）<br><br>社会契约版："drink beer → must be over 18"<br><strong>绝大多数做对</strong><br><br>结构相同，但大脑有专门处理社会契约的模块。<br><br>这是 dual process 的另一个例子（Cheater Detection Module vs Central Cognition）。`
   },
   {
-    topic: "Rationality",
-    term: "Q-Learning update rule",
-    termCn: "Q-learning 更新规则",
-    back: "<span class='formula'>Q(s,a) ← Q(s,a) + α · [R(s') + γ · max Q(s',a') − Q(s,a)]</span>方括号里的是 <strong>prediction error</strong>（预测误差）。<br><br><strong>α</strong> (alpha) = learning rate（学习率）<br><strong>γ</strong> (gamma) = discount factor（贴现因子）<br>s' terminal 时 → <strong>max Q(s',a') = 0</strong><br><br>流程：<em>CHOOSE → MOVE → LEARN</em><br><br>算法保证在合理条件下收敛到真值函数。<br><br><span class='en'>Temporal difference learning solves credit assignment problem.</span>"
+    topic: `Rationality`,
+    term: `Q-Learning update rule`,
+    termCn: `Q-learning 更新规则`,
+    back: `<span class='formula'>Q(s,a) ← Q(s,a) + α · [R(s') + γ · max Q(s',a') − Q(s,a)]</span>方括号里的是 <strong>prediction error</strong>（预测误差）。<br><br><strong>α</strong> (alpha) = learning rate（学习率）<br><strong>γ</strong> (gamma) = discount factor（贴现因子）<br>s' terminal 时 → <strong>max Q(s',a') = 0</strong><br><br>流程：<em>CHOOSE → MOVE → LEARN</em><br><br>算法保证在合理条件下收敛到真值函数。<br><br><span class='en'>Temporal difference learning solves credit assignment problem.</span>`
   },
   {
-    topic: "Rationality",
-    term: "Wally's Walk 计算示例",
-    termCn: "Q-learning 实战",
-    back: "初始 Q 值：<ul><li>Q(park, truck)=3</li><li>Q(park, home)=-1</li><li>Q(truck, ice-cream)=5</li><li>Q(truck, swim)=8</li></ul>γ=0.7, α=0.8。<br><br>第 1 次迭代：Wally 选 "run to truck"（3>-1），到 truck 得 R=4；选 "swim"（8>5），到 water 得 R=-5（terminal）。<br><br>更新 Q(park, truck)：<br>pred_err = [4 + 0.7×8] − 3 = <strong>6.6</strong><br>Q ← 3 + 0.8×6.6 = <strong>8.28</strong><br><br>更新 Q(truck, swim)（terminal → max=0）：<br>pred_err = [-5 + 0] − 8 = <strong>-13</strong><br>Q ← 8 + 0.8×(-13) = <strong>-2.4</strong>"
+    topic: `Rationality`,
+    term: `Wally's Walk 计算示例`,
+    termCn: `Q-learning 实战`,
+    back: `初始 Q 值：<ul><li>Q(park, truck)=3</li><li>Q(park, home)=-1</li><li>Q(truck, ice-cream)=5</li><li>Q(truck, swim)=8</li></ul>γ=0.7, α=0.8。<br><br>第 1 次迭代：Wally 选 "run to truck"（3>-1），到 truck 得 R=4；选 "swim"（8>5），到 water 得 R=-5（terminal）。<br><br>更新 Q(park, truck)：<br>pred_err = [4 + 0.7×8] − 3 = <strong>6.6</strong><br>Q ← 3 + 0.8×6.6 = <strong>8.28</strong><br><br>更新 Q(truck, swim)（terminal → max=0）：<br>pred_err = [-5 + 0] − 8 = <strong>-13</strong><br>Q ← 8 + 0.8×(-13) = <strong>-2.4</strong>`
   },
   {
-    topic: "Rationality",
-    term: "RL brain regions",
-    termCn: "强化学习的脑区三元组",
-    back: "<strong>必背！</strong><br><br><strong>Striatum</strong>（纹状体，basal ganglia 一部分）<br>→ 编码 <em>reward magnitude</em><br>（Knutson 2003 fMRI：奖金 $0/$0.20/$1/$5 对应不同 BOLD 信号）<br><br><strong>VTA</strong>（腹侧被盖区，在脑干/中脑）<br>→ <strong>多巴胺神经元</strong>编码 <em>prediction error</em><br><br><strong>vmPFC</strong>（腹内侧前额叶皮层）<br>→ 编码 <em>Q values</em>（期望未来回报）"
+    topic: `Rationality`,
+    term: `RL brain regions`,
+    termCn: `强化学习的脑区三元组`,
+    back: `<strong>必背！</strong><br><br><strong>Striatum</strong>（纹状体，basal ganglia 一部分）<br>→ 编码 <em>reward magnitude</em><br>（Knutson 2003 fMRI：奖金 $0/$0.20/$1/$5 对应不同 BOLD 信号）<br><br><strong>VTA</strong>（腹侧被盖区，在脑干/中脑）<br>→ <strong>多巴胺神经元</strong>编码 <em>prediction error</em><br><br><strong>vmPFC</strong>（腹内侧前额叶皮层）<br>→ 编码 <em>Q values</em>（期望未来回报）`
   },
   {
-    topic: "Rationality",
-    term: "VTA prediction error",
-    termCn: "VTA 预测误差实验",
-    back: "VTA 多巴胺神经元编码 <strong>prediction error</strong>：<br><br><strong>Case 1</strong>：训练一直得 reward（Q=5），Day 11 也得 reward<br>→ <em>Error = 5 − 5 = 0</em>，多巴胺神经元 <strong>无信号</strong><br><br><strong>Case 2</strong>：训练无 reward（Q=0），Day 11 意外得 reward<br>→ <em>Error = 5 − 0 = +5</em>，多巴胺神经元 <strong>爆发活动</strong><br><br><strong>Case 3</strong>：预期有 reward 但没来<br>→ <em>负信号</em>，多巴胺神经元 <strong>suppression</strong>（被抑制）<br><br>完美匹配 Q-learning 的 prediction error 项！"
+    topic: `Rationality`,
+    term: `VTA prediction error`,
+    termCn: `VTA 预测误差实验`,
+    back: `VTA 多巴胺神经元编码 <strong>prediction error</strong>：<br><br><strong>Case 1</strong>：训练一直得 reward（Q=5），Day 11 也得 reward<br>→ <em>Error = 5 − 5 = 0</em>，多巴胺神经元 <strong>无信号</strong><br><br><strong>Case 2</strong>：训练无 reward（Q=0），Day 11 意外得 reward<br>→ <em>Error = 5 − 0 = +5</em>，多巴胺神经元 <strong>爆发活动</strong><br><br><strong>Case 3</strong>：预期有 reward 但没来<br>→ <em>负信号</em>，多巴胺神经元 <strong>suppression</strong>（被抑制）<br><br>完美匹配 Q-learning 的 prediction error 项！`
   },
   {
-    topic: "Rationality",
-    term: "Iowa Gambling Task",
-    termCn: "爱荷华赌博任务",
-    back: "<strong>Bechara et al. (1997)</strong>。4 副牌：<br><ul><li>A, B = <strong>Bad decks</strong>（高赢但更大损失，期望值负）</li><li>C, D = <strong>Good decks</strong>（小赢小输，期望值正）</li></ul>测 <strong>SCR</strong>（皮肤电反应）。<br><br>4 阶段（<strong>必背</strong>）：<ol><li><strong>Baseline</strong>（卡 0-10）：新任务在猜</li><li><strong>Pre-hunch</strong>（10-20）："不知道怎么回事"</li><li><strong>Hunch</strong>（20-80）："我 like/dislike 某些牌"（说不出理由）</li><li><strong>Conceptual</strong>（80-100）：能解释</li></ol><br>健康被试：<em>pre-hunch 阶段就已对 Bad decks 产生更大 anticipatory SCR</em>——<strong>身体比意识更早知道！</strong>"
+    topic: `Rationality`,
+    term: `Iowa Gambling Task`,
+    termCn: `爱荷华赌博任务`,
+    back: `<strong>Bechara et al. (1997)</strong>。4 副牌：<br><ul><li>A, B = <strong>Bad decks</strong>（高赢但更大损失，期望值负）</li><li>C, D = <strong>Good decks</strong>（小赢小输，期望值正）</li></ul>测 <strong>SCR</strong>（皮肤电反应）。<br><br>4 阶段（<strong>必背</strong>）：<ol><li><strong>Baseline</strong>（卡 0-10）：新任务在猜</li><li><strong>Pre-hunch</strong>（10-20）："不知道怎么回事"</li><li><strong>Hunch</strong>（20-80）："我 like/dislike 某些牌"（说不出理由）</li><li><strong>Conceptual</strong>（80-100）：能解释</li></ol><br>健康被试：<em>pre-hunch 阶段就已对 Bad decks 产生更大 anticipatory SCR</em>——<strong>身体比意识更早知道！</strong>`
   },
   {
-    topic: "Rationality",
-    term: "Somatic Marker Hypothesis",
-    termCn: "身体标记假说",
-    back: "<strong>Damasio</strong> 基于 Iowa Gambling Task 提出。<br><br>核心主张：<em>身体的情感反应对应 Q values，vmPFC 是关键载体。<strong>理性决策依赖情绪/身体信号。</strong></em><br><br>证据：<strong>vmPFC 损伤患者</strong>：<ul><li>没有 anticipatory SCRs</li><li>仍持续从 Bad decks 取牌</li><li>即使到 conceptual 阶段能口头解释哪些牌坏，行为上还是抽坏牌</li></ul><br>→ 情感不是理性的对立面，而是必要补充。"
+    topic: `Rationality`,
+    term: `Somatic Marker Hypothesis`,
+    termCn: `身体标记假说`,
+    back: `<strong>Damasio</strong> 基于 Iowa Gambling Task 提出。<br><br>核心主张：<em>身体的情感反应对应 Q values，vmPFC 是关键载体。<strong>理性决策依赖情绪/身体信号。</strong></em><br><br>证据：<strong>vmPFC 损伤患者</strong>：<ul><li>没有 anticipatory SCRs</li><li>仍持续从 Bad decks 取牌</li><li>即使到 conceptual 阶段能口头解释哪些牌坏，行为上还是抽坏牌</li></ul><br>→ 情感不是理性的对立面，而是必要补充。`
   },
   {
-    topic: "Rationality",
-    term: "Three camps on rationality",
-    termCn: "理性问题的三大阵营",
-    back: "<strong>Heuristics & Biases</strong>（Kahneman）<br>人理性吗？<em>经常不是</em><br>哪部分让我们理性？<em>System 2</em><br>如何促进？<em>识别并纠正 System 1 偏误</em><br><br><strong>Evolutionary Psychology</strong>（Cosmides & Tooby）<br>人理性吗？<em>经常是，只要问题格式对</em><br>哪部分？<em>System 1 + 域特定模块</em><br>如何促进？<em>用 frequency / social contract 格式</em><br><br><strong>Neuroeconomics</strong>（Glimcher & Rustichini）<br>人理性吗？<em>是，尤其自动情感层面</em><br>哪部分？<em>情感/RL 系统</em><br>如何促进？<em>带反馈的体验学习</em>"
+    topic: `Rationality`,
+    term: `Three camps on rationality`,
+    termCn: `理性问题的三大阵营`,
+    back: `<strong>Heuristics & Biases</strong>（Kahneman）<br>人理性吗？<em>经常不是</em><br>哪部分让我们理性？<em>System 2</em><br>如何促进？<em>识别并纠正 System 1 偏误</em><br><br><strong>Evolutionary Psychology</strong>（Cosmides & Tooby）<br>人理性吗？<em>经常是，只要问题格式对</em><br>哪部分？<em>System 1 + 域特定模块</em><br>如何促进？<em>用 frequency / social contract 格式</em><br><br><strong>Neuroeconomics</strong>（Glimcher & Rustichini）<br>人理性吗？<em>是，尤其自动情感层面</em><br>哪部分？<em>情感/RL 系统</em><br>如何促进？<em>带反馈的体验学习</em>`
   },
 
   // === Moral ===
   {
-    topic: "Moral",
-    term: "Trolley: Bystander vs Footbridge",
-    termCn: "电车难题的两个版本",
-    back: "<strong>同样结果（1 死救 5），但判断相反。</strong><br><br><strong>Bystander Problem</strong>：<br>扳道岔改道杀 1 救 5。<br>多数人：<strong>permissible</strong> ✓<br><br><strong>Footbridge Problem</strong>：<br>把天桥上大个子推下去挡电车，救 5 人。<br>多数人：<strong>not permissible</strong> ✗<br><br>为什么？两种解释：<ul><li>Greene：dual process（personal alarm-bell vs impersonal cost-benefit）</li><li>Mikhail：Doctrine of Double Effect（side effect vs means）</li></ul>"
+    topic: `Moral`,
+    term: `Trolley: Bystander vs Footbridge`,
+    termCn: `电车难题的两个版本`,
+    back: `<strong>同样结果（1 死救 5），但判断相反。</strong><br><br><strong>Bystander Problem</strong>：<br>扳道岔改道杀 1 救 5。<br>多数人：<strong>permissible</strong> ✓<br><br><strong>Footbridge Problem</strong>：<br>把天桥上大个子推下去挡电车，救 5 人。<br>多数人：<strong>not permissible</strong> ✗<br><br>为什么？两种解释：<ul><li>Greene：dual process（personal alarm-bell vs impersonal cost-benefit）</li><li>Mikhail：Doctrine of Double Effect（side effect vs means）</li></ul>`
   },
   {
-    topic: "Moral",
-    term: "Greene's dual-process account",
-    termCn: "Greene 的双过程理论",
-    back: "<strong>fMRI (Greene 2001)</strong> 发现：<br><ul><li><strong>Personal Force Dilemmas</strong>（Footbridge）→ <em>alarm bell emotions</em> → 情绪脑区激活</li><li><strong>Impersonal Dilemmas</strong>（Bystander）→ <em>cost-benefit calculation</em> → DLPFC 等认知脑区激活</li></ul><br><strong>Reaction Time 证据</strong>：Personal 困境中说"可允许"（情绪不一致）反应时显著慢；其他条件无 RT 差异。<br><br>Greene (2009)：触发警铃的是 <strong>personal force</strong>（亲身施力）——不一定物理接触。<br><br>Greene 隐含支持 <strong>Utilitarianism</strong>。"
+    topic: `Moral`,
+    term: `Greene's dual-process account`,
+    termCn: `Greene 的双过程理论`,
+    back: `<strong>fMRI (Greene 2001)</strong> 发现：<br><ul><li><strong>Personal Force Dilemmas</strong>（Footbridge）→ <em>alarm bell emotions</em> → 情绪脑区激活</li><li><strong>Impersonal Dilemmas</strong>（Bystander）→ <em>cost-benefit calculation</em> → DLPFC 等认知脑区激活</li></ul><br><strong>Reaction Time 证据</strong>：Personal 困境中说"可允许"（情绪不一致）反应时显著慢；其他条件无 RT 差异。<br><br>Greene (2009)：触发警铃的是 <strong>personal force</strong>（亲身施力）——不一定物理接触。<br><br>Greene 隐含支持 <strong>Utilitarianism</strong>。`
   },
   {
-    topic: "Moral",
-    term: "Doctrine of Double Effect (DDE)",
-    termCn: "双重效果原则",
-    back: "<strong>必背！</strong><br><br><em>"It is <strong>permissible</strong> to cause a foreseen but unintended harm as a <strong>side effect</strong> of bringing about a good end, even though it is <strong>not permissible</strong> to cause such a harm as a <strong>means</strong> to bringing about the same good end."</em><br><br>医生例子：<ul><li>开止痛药 → 关节炎缓解（end），皮疹（side effect）✓ permissible</li><li>皮疹作为使药生效的 means ✗ not permissible</li></ul><br>Trolley 应用：<ul><li><strong>Bystander</strong>：杀 1 是 <em>side effect</em> ✓</li><li><strong>Footbridge</strong>：杀 1 是 <em>means</em> ✗</li></ul>"
+    topic: `Moral`,
+    term: `Doctrine of Double Effect (DDE)`,
+    termCn: `双重效果原则`,
+    back: `<strong>必背！</strong><br><br><em>"It is <strong>permissible</strong> to cause a foreseen but unintended harm as a <strong>side effect</strong> of bringing about a good end, even though it is <strong>not permissible</strong> to cause such a harm as a <strong>means</strong> to bringing about the same good end."</em><br><br>医生例子：<ul><li>开止痛药 → 关节炎缓解（end），皮疹（side effect）✓ permissible</li><li>皮疹作为使药生效的 means ✗ not permissible</li></ul><br>Trolley 应用：<ul><li><strong>Bystander</strong>：杀 1 是 <em>side effect</em> ✓</li><li><strong>Footbridge</strong>：杀 1 是 <em>means</em> ✗</li></ul>`
   },
   {
-    topic: "Moral",
-    term: "Mikhail's Universal Moral Grammar",
-    termCn: "Mikhail 的普遍道德语法",
-    back: "<strong>Linguistic Analogy</strong>：道德判断类比语言——由 <strong>inaccessible module</strong> 产生，模块知道我们说不出的规则（像 interrogative rule）。<br><br><strong>UMG</strong> 特征：<ul><li>Language-like processes</li><li>Complex / abstract</li><li>Based on sophisticated principles（如 DDE）</li><li>Possesses rational justification</li></ul><br><strong>POS argument</strong>：儿童从贫乏道德输入发展出精致判断 → 必有先天 UMG。<br><br>Greene 说快过程 simple/primitive/无理性依据；Mikhail 说<strong>complex/sophisticated/有理性依据</strong>。"
+    topic: `Moral`,
+    term: `Mikhail's Universal Moral Grammar`,
+    termCn: `Mikhail 的普遍道德语法`,
+    back: `<strong>Linguistic Analogy</strong>：道德判断类比语言——由 <strong>inaccessible module</strong> 产生，模块知道我们说不出的规则（像 interrogative rule）。<br><br><strong>UMG</strong> 特征：<ul><li>Language-like processes</li><li>Complex / abstract</li><li>Based on sophisticated principles（如 DDE）</li><li>Possesses rational justification</li></ul><br><strong>POS argument</strong>：儿童从贫乏道德输入发展出精致判断 → 必有先天 UMG。<br><br>Greene 说快过程 simple/primitive/无理性依据；Mikhail 说<strong>complex/sophisticated/有理性依据</strong>。`
   },
   {
-    topic: "Moral",
-    term: "Greene vs Mikhail",
-    termCn: "Greene 与 Mikhail 对比",
-    back: "<strong>核心分歧</strong>：<br><br><strong>Greene</strong>：<br>道德 = dual process（情绪 + 理性）<br>快过程：<em>simple, primitive, 无理性依据</em><br>物理层：情绪脑区 vs DLPFC<br>立场：支持 <strong>Utilitarianism</strong><br>Footbridge 反应：<em>不可信</em>（只是原始情绪）<br><br><strong>Mikhail</strong>：<br>道德 = single sophisticated UMG<br>快过程：<em>language-like, complex, 有理性依据</em><br>物理层：??? 未指定<br>立场：支持 DDE 类规则可信<br>Footbridge 反应：<em>可信</em>（UMG 输出）"
+    topic: `Moral`,
+    term: `Greene vs Mikhail`,
+    termCn: `Greene 与 Mikhail 对比`,
+    back: `<strong>核心分歧</strong>：<br><br><strong>Greene</strong>：<br>道德 = dual process（情绪 + 理性）<br>快过程：<em>simple, primitive, 无理性依据</em><br>物理层：情绪脑区 vs DLPFC<br>立场：支持 <strong>Utilitarianism</strong><br>Footbridge 反应：<em>不可信</em>（只是原始情绪）<br><br><strong>Mikhail</strong>：<br>道德 = single sophisticated UMG<br>快过程：<em>language-like, complex, 有理性依据</em><br>物理层：??? 未指定<br>立场：支持 DDE 类规则可信<br>Footbridge 反应：<em>可信</em>（UMG 输出）`
   },
   {
-    topic: "Moral",
-    term: "vmPFC damage & moral judgment",
-    termCn: "vmPFC 损伤与道德判断",
-    back: "<strong>Koenigs et al. (2007, Nature)</strong> 的谜题：<br><br>vmPFC 损伤患者在 Footbridge 类 personal dilemmas 中 <strong>更多给"yes"（功利答案）</strong>，情绪冲突更少。<br><br>表面看：这是 Greene 推崇的"理性"答案。<br><br>但悖论：<ul><li>Iowa Gambling Task 显示 vmPFC 损伤 = 决策能力<strong>受损</strong></li><li>那他们给"更理性"答案——是真的理性吗？</li></ul><br>教授说：<em>矛盾有趣但不考</em>，可作为加分思考点。"
+    topic: `Moral`,
+    term: `vmPFC damage & moral judgment`,
+    termCn: `vmPFC 损伤与道德判断`,
+    back: `<strong>Koenigs et al. (2007, Nature)</strong> 的谜题：<br><br>vmPFC 损伤患者在 Footbridge 类 personal dilemmas 中 <strong>更多给"yes"（功利答案）</strong>，情绪冲突更少。<br><br>表面看：这是 Greene 推崇的"理性"答案。<br><br>但悖论：<ul><li>Iowa Gambling Task 显示 vmPFC 损伤 = 决策能力<strong>受损</strong></li><li>那他们给"更理性"答案——是真的理性吗？</li></ul><br>教授说：<em>矛盾有趣但不考</em>，可作为加分思考点。`
   },
   {
-    topic: "Moral",
-    term: "Descriptive vs Normative claims",
-    termCn: "描述性 vs 规范性主张",
-    back: "考试区分（必考）：<br><br><strong>Descriptive (is claims)</strong><br>事实陈述，描述事物是怎样的。<br>例："The movie runs for 178 minutes."<br><br><strong>Normative (ought claims)</strong><br>评价陈述，涉及标准/价值。<br>例："The movie is too long."<br><br>Greene 的主张：<ul><li>D1-D4：描述性（Footbridge 判断由 alarm-bell 情绪产生...）</li><li>N1-N2：规范性（Footbridge 判断"较差"——隐含 Utilitarian 判断更可信）</li></ul>"
+    topic: `Moral`,
+    term: `Descriptive vs Normative claims`,
+    termCn: `描述性 vs 规范性主张`,
+    back: `考试区分（必考）：<br><br><strong>Descriptive (is claims)</strong><br>事实陈述，描述事物是怎样的。<br>例："The movie runs for 178 minutes."<br><br><strong>Normative (ought claims)</strong><br>评价陈述，涉及标准/价值。<br>例："The movie is too long."<br><br>Greene 的主张：<ul><li>D1-D4：描述性（Footbridge 判断由 alarm-bell 情绪产生...）</li><li>N1-N2：规范性（Footbridge 判断"较差"——隐含 Utilitarian 判断更可信）</li></ul>`
   },
 
   // === Neuroanatomy ===
   {
-    topic: "Brain",
-    term: "Brain direction terms",
-    termCn: "大脑方位术语",
-    back: "<ul><li><strong>Superior / Dorsal</strong>：上 / 背</li><li><strong>Inferior / Ventral</strong>：下 / 腹</li><li><strong>Anterior / Rostral</strong>：前</li><li><strong>Posterior / Caudal</strong>：后</li><li><strong>Medial</strong>：靠中线</li><li><strong>Lateral</strong>：靠外侧</li></ul><br>皮层分区：<ul><li><strong>Frontal</strong>（额叶，含 Motor Cortex, Broca）</li><li><strong>Parietal</strong>（顶叶）</li><li><strong>Occipital</strong>（枕叶，含 V1）</li><li><strong>Temporal</strong>（颞叶，含 Primary Auditory Cortex, Wernicke, FFA）</li><li>Cerebellum（小脑）</li><li>Brain Stem（脑干，含 VTA）</li></ul>"
+    topic: `Brain`,
+    term: `Brain direction terms`,
+    termCn: `大脑方位术语`,
+    back: `<ul><li><strong>Superior / Dorsal</strong>：上 / 背</li><li><strong>Inferior / Ventral</strong>：下 / 腹</li><li><strong>Anterior / Rostral</strong>：前</li><li><strong>Posterior / Caudal</strong>：后</li><li><strong>Medial</strong>：靠中线</li><li><strong>Lateral</strong>：靠外侧</li></ul><br>皮层分区：<ul><li><strong>Frontal</strong>（额叶，含 Motor Cortex, Broca）</li><li><strong>Parietal</strong>（顶叶）</li><li><strong>Occipital</strong>（枕叶，含 V1）</li><li><strong>Temporal</strong>（颞叶，含 Primary Auditory Cortex, Wernicke, FFA）</li><li>Cerebellum（小脑）</li><li>Brain Stem（脑干，含 VTA）</li></ul>`
   },
   {
-    topic: "Brain",
-    term: "Language brain regions",
-    termCn: "语言相关脑区",
-    back: "<strong>必考图！</strong><br><br><strong>Motor Cortex</strong>（额叶顶部）<br>损伤 → 难以协调口、唇、舌发音<br><br><strong>Broca's area</strong>（左额叶，"syntactic region"）<br>损伤 → Broca's aphasia（非流利、无语法、意义保留）<br><br><strong>Wernicke's area</strong>（左颞叶，"semantic region"）<br>损伤 → Wernicke's aphasia（流利、语法正确、word salad）<br><br><strong>Primary Auditory Cortex</strong>（颞叶）<br>损伤 → cortical deafness（皮层性耳聋）"
+    topic: `Brain`,
+    term: `Language brain regions`,
+    termCn: `语言相关脑区`,
+    back: `<strong>必考图！</strong><br><br><strong>Motor Cortex</strong>（额叶顶部）<br>损伤 → 难以协调口、唇、舌发音<br><br><strong>Broca's area</strong>（左额叶，"syntactic region"）<br>损伤 → Broca's aphasia（非流利、无语法、意义保留）<br><br><strong>Wernicke's area</strong>（左颞叶，"semantic region"）<br>损伤 → Wernicke's aphasia（流利、语法正确、word salad）<br><br><strong>Primary Auditory Cortex</strong>（颞叶）<br>损伤 → cortical deafness（皮层性耳聋）`
   },
   {
-    topic: "Brain",
-    term: "Subcortical structures",
-    termCn: "皮层下结构",
-    back: "<strong>Thalamus</strong>（丘脑，tan）<br>→ 中继感觉信息<br><br><strong>Basal Ganglia</strong>（基底神经节，purple）<br>含 <strong>striatum</strong>（纹状体）<br>→ 处理奖励/惩罚、动作控制<br><br><strong>Amygdala</strong>（杏仁核，reddish）<br>→ 处理情绪，尤其恐惧<br><br><strong>VTA</strong>（腹侧被盖区，在脑干/中脑）<br>→ 多巴胺神经元编码 prediction error<br><br><strong>vmPFC</strong>（腹内侧前额叶皮层）<br>→ 编码 Q values"
+    topic: `Brain`,
+    term: `Subcortical structures`,
+    termCn: `皮层下结构`,
+    back: `<strong>Thalamus</strong>（丘脑，tan）<br>→ 中继感觉信息<br><br><strong>Basal Ganglia</strong>（基底神经节，purple）<br>含 <strong>striatum</strong>（纹状体）<br>→ 处理奖励/惩罚、动作控制<br><br><strong>Amygdala</strong>（杏仁核，reddish）<br>→ 处理情绪，尤其恐惧<br><br><strong>VTA</strong>（腹侧被盖区，在脑干/中脑）<br>→ 多巴胺神经元编码 prediction error<br><br><strong>vmPFC</strong>（腹内侧前额叶皮层）<br>→ 编码 Q values`
   },
 
   // === Key People ===
   {
-    topic: "People",
-    term: "David Marr",
-    termCn: "戴维·马尔",
-    back: "英国神经科学家，提出 <strong>三层解释框架</strong>：<em>Functional / Algorithmic / Physical</em>。<br><br>整门课用这三层分析每个主题——perception、language、emotion、rationality、moral judgment...<br><br>期末必考——给你一个现象让你说出它在每一层是什么。"
+    topic: `People`,
+    term: `David Marr`,
+    termCn: `戴维·马尔`,
+    back: `英国神经科学家，提出 <strong>三层解释框架</strong>：<em>Functional / Algorithmic / Physical</em>。<br><br>整门课用这三层分析每个主题——perception、language、emotion、rationality、moral judgment...<br><br>期末必考——给你一个现象让你说出它在每一层是什么。`
   },
   {
-    topic: "People",
-    term: "Noam Chomsky",
-    termCn: "乔姆斯基",
-    back: "语言学的 <strong>Cognitivism</strong> 创始人。<br><br>核心贡献：<ul><li><strong>Universal Grammar</strong>（UG）</li><li><strong>Phrase-structure grammar</strong>（短语结构语法）</li><li>1959 年发表<em>对 Skinner《Verbal Behavior》的书评</em>——被视为对行为主义的致命一击</li></ul><br>核心主张：语言是 innate，不能用联想学习解释（4 个属性：stimulus independence, novelty, productivity, systematicity 都解释不了）。"
+    topic: `People`,
+    term: `Noam Chomsky`,
+    termCn: `乔姆斯基`,
+    back: `语言学的 <strong>Cognitivism</strong> 创始人。<br><br>核心贡献：<ul><li><strong>Universal Grammar</strong>（UG）</li><li><strong>Phrase-structure grammar</strong>（短语结构语法）</li><li>1959 年发表<em>对 Skinner《Verbal Behavior》的书评</em>——被视为对行为主义的致命一击</li></ul><br>核心主张：语言是 innate，不能用联想学习解释（4 个属性：stimulus independence, novelty, productivity, systematicity 都解释不了）。`
   },
   {
-    topic: "People",
-    term: "Kahneman & Tversky",
-    termCn: "卡尼曼和特沃斯基",
-    back: "<strong>Heuristics and Biases Research Program</strong> 创始人。<br><br>Kahneman 2002 年获 <strong>诺贝尔经济学奖</strong>。著作：<em>Thinking, Fast and Slow</em>。<br><br>核心主张：<em>"In making predictions and judgments under uncertainty, people do not appear to follow the calculus of chance or statistical theory. Instead, they rely on a limited number of heuristics which sometimes yield reasonable judgments and sometimes lead to severe and systematic errors."</em><br><br>4 大 heuristics：<em>representativeness, availability, affect, framing</em>。<br><br>系统 1 / 系统 2。"
+    topic: `People`,
+    term: `Kahneman & Tversky`,
+    termCn: `卡尼曼和特沃斯基`,
+    back: `<strong>Heuristics and Biases Research Program</strong> 创始人。<br><br>Kahneman 2002 年获 <strong>诺贝尔经济学奖</strong>。著作：<em>Thinking, Fast and Slow</em>。<br><br>核心主张：<em>"In making predictions and judgments under uncertainty, people do not appear to follow the calculus of chance or statistical theory. Instead, they rely on a limited number of heuristics which sometimes yield reasonable judgments and sometimes lead to severe and systematic errors."</em><br><br>4 大 heuristics：<em>representativeness, availability, affect, framing</em>。<br><br>系统 1 / 系统 2。`
   },
   {
-    topic: "People",
-    term: "LeDoux",
-    termCn: "勒杜克斯",
-    back: "神经科学家，研究<strong>恐惧处理</strong>。<br><br>提出 <strong>Low Road / High Road</strong> 双通路模型：<ul><li>Low Road：thalamus → amygdala（快、无意识）</li><li>High Road：thalamus → cortex → amygdala（慢、有意识）</li></ul><br>能解释"明知不该怕还是怕"这种无意识恐惧反应。<br><br>反对 Standard Appraisal Theory 过于 conscious。"
+    topic: `People`,
+    term: `LeDoux`,
+    termCn: `勒杜克斯`,
+    back: `神经科学家，研究<strong>恐惧处理</strong>。<br><br>提出 <strong>Low Road / High Road</strong> 双通路模型：<ul><li>Low Road：thalamus → amygdala（快、无意识）</li><li>High Road：thalamus → cortex → amygdala（慢、有意识）</li></ul><br>能解释"明知不该怕还是怕"这种无意识恐惧反应。<br><br>反对 Standard Appraisal Theory 过于 conscious。`
   },
   {
-    topic: "People",
-    term: "Greene",
-    termCn: "约书亚·格林",
-    back: "哈佛心理学家，研究<strong>道德判断</strong>。<br><br>经典研究：<em>Greene et al. (2001, Science)</em> —— fMRI 发现 trolley/footbridge 激活不同脑区。<br><br>核心主张：<ul><li><strong>道德判断是 dual process</strong>：personal force alarm-bell vs impersonal cost-benefit</li><li>情绪警铃"simple, primitive, lacking rational justification"</li><li>隐含支持 <strong>Utilitarianism</strong></li></ul>"
+    topic: `People`,
+    term: `Greene`,
+    termCn: `约书亚·格林`,
+    back: `哈佛心理学家，研究<strong>道德判断</strong>。<br><br>经典研究：<em>Greene et al. (2001, Science)</em> —— fMRI 发现 trolley/footbridge 激活不同脑区。<br><br>核心主张：<ul><li><strong>道德判断是 dual process</strong>：personal force alarm-bell vs impersonal cost-benefit</li><li>情绪警铃"simple, primitive, lacking rational justification"</li><li>隐含支持 <strong>Utilitarianism</strong></li></ul>`
   },
   {
-    topic: "People",
-    term: "Mikhail",
-    termCn: "米哈伊尔",
-    back: "法律学者 + 认知科学家。<br><br>提出 <strong>Universal Moral Grammar</strong>（2007）。<br><br>核心主张：<ul><li>道德判断类比语言——由 inaccessible module 产生</li><li>Sophisticated principles 如 <strong>Doctrine of Double Effect</strong></li><li>Poverty of Moral Stimulus argument</li><li>道德判断 <em>possesses rational justification</em>（对立 Greene）</li></ul>"
+    topic: `People`,
+    term: `Mikhail`,
+    termCn: `米哈伊尔`,
+    back: `法律学者 + 认知科学家。<br><br>提出 <strong>Universal Moral Grammar</strong>（2007）。<br><br>核心主张：<ul><li>道德判断类比语言——由 inaccessible module 产生</li><li>Sophisticated principles 如 <strong>Doctrine of Double Effect</strong></li><li>Poverty of Moral Stimulus argument</li><li>道德判断 <em>possesses rational justification</em>（对立 Greene）</li></ul>`
   },
   {
-    topic: "People",
-    term: "Fodor",
-    termCn: "福多",
-    back: "哲学家，提出 <strong>Modularity of Mind</strong>（模块心智）。<br><br>模块的 6 个 characteristic features：<ul><li>Mandatory</li><li>Fast</li><li>Domain-specific</li><li>Informationally encapsulated</li><li>Inaccessible</li><li>Neurally discretely localized</li></ul><br><strong>没有一条是 required！</strong>"
+    topic: `People`,
+    term: `Fodor`,
+    termCn: `福多`,
+    back: `哲学家，提出 <strong>Modularity of Mind</strong>（模块心智）。<br><br>模块的 6 个 characteristic features：<ul><li>Mandatory</li><li>Fast</li><li>Domain-specific</li><li>Informationally encapsulated</li><li>Inaccessible</li><li>Neurally discretely localized</li></ul><br><strong>没有一条是 required！</strong>`
   },
   {
-    topic: "People",
-    term: "Cosmides & Tooby",
-    termCn: "科斯米德斯和托比",
-    back: "<strong>Evolutionary Psychology</strong> 的代表。<br><br>核心主张：心智是 <strong>massively modular</strong>。模块 domain-specific 且适应 ancestral environment 格式。<br><br>经典研究：<strong>Cheater Detection Module</strong>——Wason Selection Task 社会契约版人人做对，证明有专门的骗子侦测模块。<br><br>回应 Kahneman：用 frequency 格式问 Linda 问题，conjunction fallacy 从 89% 降到 22%。"
+    topic: `People`,
+    term: `Cosmides & Tooby`,
+    termCn: `科斯米德斯和托比`,
+    back: `<strong>Evolutionary Psychology</strong> 的代表。<br><br>核心主张：心智是 <strong>massively modular</strong>。模块 domain-specific 且适应 ancestral environment 格式。<br><br>经典研究：<strong>Cheater Detection Module</strong>——Wason Selection Task 社会契约版人人做对，证明有专门的骗子侦测模块。<br><br>回应 Kahneman：用 frequency 格式问 Linda 问题，conjunction fallacy 从 89% 降到 22%。`
   },
   {
-    topic: "People",
-    term: "Bechara & Damasio",
-    termCn: "贝卡拉和达马西奥",
-    back: "<strong>Iowa Gambling Task</strong>（Bechara et al. 1997）：<ul><li>4 副牌（A, B 坏；C, D 好）</li><li>健康被试在意识之前就用 SCR 识别坏牌</li><li>vmPFC 损伤患者无法做对</li></ul><br><strong>Damasio's Somatic Marker Hypothesis</strong>：身体情感反应对应 Q values，vmPFC 是载体。<br><br>→ <em>理性决策依赖情绪/身体信号</em>。"
+    topic: `People`,
+    term: `Bechara & Damasio`,
+    termCn: `贝卡拉和达马西奥`,
+    back: `<strong>Iowa Gambling Task</strong>（Bechara et al. 1997）：<ul><li>4 副牌（A, B 坏；C, D 好）</li><li>健康被试在意识之前就用 SCR 识别坏牌</li><li>vmPFC 损伤患者无法做对</li></ul><br><strong>Damasio's Somatic Marker Hypothesis</strong>：身体情感反应对应 Q values，vmPFC 是载体。<br><br>→ <em>理性决策依赖情绪/身体信号</em>。`
   },
   {
-    topic: "People",
-    term: "Ekman",
-    termCn: "艾克曼",
-    back: "研究面部表情。<br><br>1971 年跨文化研究提出 <strong>6 种 basic emotions</strong>：<em>happiness, sadness, anger, fear, disgust, surprise</em>——全人类可识别。<br><br>支持 <strong>universality</strong>（Darwin：情绪表情 instinctual）。"
+    topic: `People`,
+    term: `Ekman`,
+    termCn: `艾克曼`,
+    back: `研究面部表情。<br><br>1971 年跨文化研究提出 <strong>6 种 basic emotions</strong>：<em>happiness, sadness, anger, fear, disgust, surprise</em>——全人类可识别。<br><br>支持 <strong>universality</strong>（Darwin：情绪表情 instinctual）。`
   },
   {
-    topic: "People",
-    term: "Turing",
-    termCn: "图灵",
-    back: "英国数学家。<br><br>贡献：<ul><li>给计算的 <strong>minimal formalization</strong>——Turing Machine（5 primitives：tape, symbols, head, state memory, rules）</li><li><strong>Universal Turing Machine</strong> —— maximally flexible + maximally powerful</li><li><strong>Church-Turing Thesis</strong></li><li><strong>Turing Test</strong> for intelligence</li><li>WWII 期间破译 Enigma 密码</li></ul>"
+    topic: `People`,
+    term: `Turing`,
+    termCn: `图灵`,
+    back: `英国数学家。<br><br>贡献：<ul><li>给计算的 <strong>minimal formalization</strong>——Turing Machine（5 primitives：tape, symbols, head, state memory, rules）</li><li><strong>Universal Turing Machine</strong> —— maximally flexible + maximally powerful</li><li><strong>Church-Turing Thesis</strong></li><li><strong>Turing Test</strong> for intelligence</li><li>WWII 期间破译 Enigma 密码</li></ul>`
   },
   {
-    topic: "People",
-    term: "Bayes",
-    termCn: "贝叶斯",
-    back: "Thomas Bayes（1702-1761），英国数学家、长老会牧师。<br><br>身后发表的 essay 建立了 <strong>Bayes' Theorem</strong>。<br><br>关键思想：<em>how to update beliefs on the basis of evidence</em>——形式化 prior knowledge + evidence 的框架。<br><br>在这门课用于感知（inverse optics）、婴儿认知、统计推理。"
+    topic: `People`,
+    term: `Bayes`,
+    termCn: `贝叶斯`,
+    back: `Thomas Bayes（1702-1761），英国数学家、长老会牧师。<br><br>身后发表的 essay 建立了 <strong>Bayes' Theorem</strong>。<br><br>关键思想：<em>how to update beliefs on the basis of evidence</em>——形式化 prior knowledge + evidence 的框架。<br><br>在这门课用于感知（inverse optics）、婴儿认知、统计推理。`
   },
   {
-    topic: "People",
-    term: "Elizabeth Spelke",
-    termCn: "斯佩尔克",
-    back: "婴儿认知研究先驱。<br><br>核心贡献：<strong>hybrid 立场</strong>——在 nativism 和 empiricism 之间。<br><br>名言：<em>"Babies are designed to learn."</em><br><br>意思是：不是每条具体知识都是天生的，但**学习机制**是天生的、高效的。<br><br>Core knowledge 理论的主要倡导者——婴儿天生拥有 core cognitive systems（物体、数字、空间、他人、社会）。"
+    topic: `People`,
+    term: `Elizabeth Spelke`,
+    termCn: `斯佩尔克`,
+    back: `婴儿认知研究先驱。<br><br>核心贡献：<strong>hybrid 立场</strong>——在 nativism 和 empiricism 之间。<br><br>名言：<em>"Babies are designed to learn."</em><br><br>意思是：不是每条具体知识都是天生的，但**学习机制**是天生的、高效的。<br><br>Core knowledge 理论的主要倡导者——婴儿天生拥有 core cognitive systems（物体、数字、空间、他人、社会）。`
   },
 
   // === Key Experiments 汇总 ===
   {
-    topic: "Experiments",
-    term: "Wug Test",
-    termCn: "Wug 测试",
-    back: "<strong>Berko (1958)</strong> 经典实验。<br><br>给儿童看虚构生物"wug"——"This is a wug. Now there is another one. There are two ___."<br><br>儿童正确答 "<strong>wugs</strong>"——尽管从未听过这个词。<br><br>证明：<ul><li>儿童在应用 <em>抽象规则</em>，不是记忆具体词</li><li>支持语言 <strong>novelty</strong> 属性</li><li>支持 cognitivism</li></ul><br>儿童还会 <em>overgeneralize</em>——"goed"、"foots"（错误应用规则到不规则词）。"
+    topic: `Experiments`,
+    term: `Wug Test`,
+    termCn: `Wug 测试`,
+    back: `<strong>Berko (1958)</strong> 经典实验。<br><br>给儿童看虚构生物"wug"——"This is a wug. Now there is another one. There are two ___."<br><br>儿童正确答 "<strong>wugs</strong>"——尽管从未听过这个词。<br><br>证明：<ul><li>儿童在应用 <em>抽象规则</em>，不是记忆具体词</li><li>支持语言 <strong>novelty</strong> 属性</li><li>支持 cognitivism</li></ul><br>儿童还会 <em>overgeneralize</em>——"goed"、"foots"（错误应用规则到不规则词）。`
   },
   {
-    topic: "Experiments",
-    term: "Wason Selection Task",
-    termCn: "Wason 选择任务",
-    back: "<strong>抽象版</strong>：4 张卡 X, M, 3, 7。规则"If X on one side, then 3 on other"。翻哪些证伪？<br>直觉：X + 3<br>正确：<strong>X + 7</strong>（M 不含 X 规则不管，3 的反面可以是任何字母）<br>多数人做错<br><br><strong>社会契约版</strong>：4 张卡（beer, coke, 23 岁, 17 岁）。规则"要喝酒必须 >18 岁"。<br><strong>多数人做对</strong>（翻 beer + 17）<br><br>→ 支持 <strong>Cheater Detection Module</strong>（Cosmides & Tooby）。"
+    topic: `Experiments`,
+    term: `Wason Selection Task`,
+    termCn: `Wason 选择任务`,
+    back: `<strong>抽象版</strong>：4 张卡 X, M, 3, 7。规则"If X on one side, then 3 on other"。翻哪些证伪？<br>直觉：X + 3<br>正确：<strong>X + 7</strong>（M 不含 X 规则不管，3 的反面可以是任何字母）<br>多数人做错<br><br><strong>社会契约版</strong>：4 张卡（beer, coke, 23 岁, 17 岁）。规则"要喝酒必须 >18 岁"。<br><strong>多数人做对</strong>（翻 beer + 17）<br><br>→ 支持 <strong>Cheater Detection Module</strong>（Cosmides & Tooby）。`
   },
   {
-    topic: "Experiments",
-    term: "Linda Problem",
-    termCn: "林达问题",
-    back: "<strong>Kahneman & Tversky (1982)</strong>。<br><br>林达 31 岁、单身、哲学专业、反核示威。<br><br>哪个更可能？<br>(f) Linda is a bank teller.<br>(h) Linda is a bank teller AND is active in the feminist movement.<br><br><strong>89% 说 (h) → Conjunction Fallacy</strong><br><br>数学上 (h) ⊂ (f)，不可能更可能。但林达"像"女权主义柜员。<br><br>代表性启发的经典证据。<br><br>改成频率表述 → 错误率降到 22%。"
+    topic: `Experiments`,
+    term: `Linda Problem`,
+    termCn: `林达问题`,
+    back: `<strong>Kahneman & Tversky (1982)</strong>。<br><br>林达 31 岁、单身、哲学专业、反核示威。<br><br>哪个更可能？<br>(f) Linda is a bank teller.<br>(h) Linda is a bank teller AND is active in the feminist movement.<br><br><strong>89% 说 (h) → Conjunction Fallacy</strong><br><br>数学上 (h) ⊂ (f)，不可能更可能。但林达"像"女权主义柜员。<br><br>代表性启发的经典证据。<br><br>改成频率表述 → 错误率降到 22%。`
   },
   {
-    topic: "Experiments",
-    term: "Asian Disease Problem",
-    termCn: "亚洲疾病问题",
-    back: "<strong>Framing Effects</strong> 的经典实验。<br><br>600 人将死于疾病，两方案选一。<br><br><strong>Gain Framing</strong>（组 1）：<ul><li>A: 200 人 <em>saved</em> → <strong>多数选</strong></li><li>B: 1/3 救 600 / 2/3 救 0</li></ul><strong>Loss Framing</strong>（组 2）：<ul><li>C: 400 人 <em>die</em></li><li>D: 1/3 零死 / 2/3 600 死 → <strong>多数选</strong></li></ul><br>A = C, B = D（数学等价），但表述改变选择——<strong>人在 gain 框架下保守，loss 框架下冒险</strong>。"
+    topic: `Experiments`,
+    term: `Asian Disease Problem`,
+    termCn: `亚洲疾病问题`,
+    back: `<strong>Framing Effects</strong> 的经典实验。<br><br>600 人将死于疾病，两方案选一。<br><br><strong>Gain Framing</strong>（组 1）：<ul><li>A: 200 人 <em>saved</em> → <strong>多数选</strong></li><li>B: 1/3 救 600 / 2/3 救 0</li></ul><strong>Loss Framing</strong>（组 2）：<ul><li>C: 400 人 <em>die</em></li><li>D: 1/3 零死 / 2/3 600 死 → <strong>多数选</strong></li></ul><br>A = C, B = D（数学等价），但表述改变选择——<strong>人在 gain 框架下保守，loss 框架下冒险</strong>。`
   },
   {
-    topic: "Experiments",
-    term: "Dutton & Aron bridge study",
-    termCn: "吊桥实验",
-    back: "<strong>Schachter-Singer Two-Factor Theory</strong> 的经典证据。<br><br>方法：男性过<strong>摇晃高吊桥</strong> vs <strong>稳固低桥</strong>，然后遇女助手。<br><br>结果：吊桥组约女助手的比例 <strong>显著更高</strong>。<br><br>解释：身体唤起（紧张心跳）被错误归因为性吸引——"我心跳这么快，一定是因为她很吸引我"。<br><br>Arousal + 有意识的解释 = 情绪。"
+    topic: `Experiments`,
+    term: `Dutton & Aron bridge study`,
+    termCn: `吊桥实验`,
+    back: `<strong>Schachter-Singer Two-Factor Theory</strong> 的经典证据。<br><br>方法：男性过<strong>摇晃高吊桥</strong> vs <strong>稳固低桥</strong>，然后遇女助手。<br><br>结果：吊桥组约女助手的比例 <strong>显著更高</strong>。<br><br>解释：身体唤起（紧张心跳）被错误归因为性吸引——"我心跳这么快，一定是因为她很吸引我"。<br><br>Arousal + 有意识的解释 = 情绪。`
   },
   {
-    topic: "Experiments",
-    term: "False Belief Task (toy melon)",
-    termCn: "玩具甜瓜 false belief",
-    back: "<strong>Onishi & Baillargeon (2005, Science)</strong><br><br>证明 <strong>15-month-old</strong> 婴儿理解他人可以有 <strong>false beliefs</strong>。<br><br>两条件（用 violation of expectation）：<br><ul><li><strong>TB-yellow</strong>：agent 看到 melon 被移到黄盒<br>→ 预期 agent 找黄盒<br>若她找<em>绿盒</em> → 婴儿惊讶</li><br><li><strong>FB-green</strong>：agent 相信 melon 在绿盒（实际被移了）<br>→ 预期 agent 找绿盒<br>若她找<em>黄盒</em> → 婴儿惊讶</li></ul><br>传统 false belief task 要 4 岁才通过——但改良版证明 15 月已经能理解。"
+    topic: `Experiments`,
+    term: `False Belief Task (toy melon)`,
+    termCn: `玩具甜瓜 false belief`,
+    back: `<strong>Onishi & Baillargeon (2005, Science)</strong><br><br>证明 <strong>15-month-old</strong> 婴儿理解他人可以有 <strong>false beliefs</strong>。<br><br>两条件（用 violation of expectation）：<br><ul><li><strong>TB-yellow</strong>：agent 看到 melon 被移到黄盒<br>→ 预期 agent 找黄盒<br>若她找<em>绿盒</em> → 婴儿惊讶</li><br><li><strong>FB-green</strong>：agent 相信 melon 在绿盒（实际被移了）<br>→ 预期 agent 找绿盒<br>若她找<em>黄盒</em> → 婴儿惊讶</li></ul><br>传统 false belief task 要 4 岁才通过——但改良版证明 15 月已经能理解。`
   },
 
   // === Formulas & Quick practice ===
   {
-    topic: "Formulas",
-    term: "Bayes' Rule 快速套公式",
-    termCn: "Sally 咳嗽题",
-    back: "先验：P(cold)=0.5, P(heartburn)=0.4, P(cancer)=0.1<br>似然：P(cough|cold)=0.8, P(cough|heartburn)=0.1, P(cough|cancer)=0.9<br><br>Q: P(heartburn | cough)?<br><br><span class='formula'>= (0.1 × 0.4) / [(0.8)(0.5) + (0.9)(0.1) + (0.1)(0.4)]<br>= 0.04 / 0.53<br>≈ 0.0755</span><br><strong>Canvas 答题格式</strong>：<br><code>P(Hhburn|d) = (0.1)(0.4) / (0.8)(0.5) + (0.9)(0.1) + (0.1)(0.4)</code><br><br><em>不用算到最后！不需要 calculator！</em>"
+    topic: `Formulas`,
+    term: `Bayes' Rule 快速套公式`,
+    termCn: `Sally 咳嗽题`,
+    back: `先验：P(cold)=0.5, P(heartburn)=0.4, P(cancer)=0.1<br>似然：P(cough|cold)=0.8, P(cough|heartburn)=0.1, P(cough|cancer)=0.9<br><br>Q: P(heartburn | cough)?<br><br><span class='formula'>= (0.1 × 0.4) / [(0.8)(0.5) + (0.9)(0.1) + (0.1)(0.4)]<br>= 0.04 / 0.53<br>≈ 0.0755</span><br><strong>Canvas 答题格式</strong>：<br><code>P(Hhburn|d) = (0.1)(0.4) / (0.8)(0.5) + (0.9)(0.1) + (0.1)(0.4)</code><br><br><em>不用算到最后！不需要 calculator！</em>`
   },
   {
-    topic: "Formulas",
-    term: "γ 贴现快速练",
-    termCn: "指数贴现计算",
-    back: "<span class='formula'>U × γˣ</span><br><br><strong>练 1</strong>：Ricky γ=0.5/年。100 utiles in 3 years?<br>→ 100 × 0.5³ = 100 × 0.125 = <strong>12.5 utiles</strong><br><br><strong>练 2</strong>：Natalia γ=0.95/周。100 utiles in 2 weeks?<br>→ 100 × 0.95² = 100 × 0.9025 = <strong>90.25 utiles</strong><br><br><strong>练 3</strong>：Siva γ=0.80/小时。50 utiles in 3 hours?<br>→ 50 × 0.8³ = 50 × 0.512 = <strong>25.6 utiles</strong>"
+    topic: `Formulas`,
+    term: `γ 贴现快速练`,
+    termCn: `指数贴现计算`,
+    back: `<span class='formula'>U × γˣ</span><br><br><strong>练 1</strong>：Ricky γ=0.5/年。100 utiles in 3 years?<br>→ 100 × 0.5³ = 100 × 0.125 = <strong>12.5 utiles</strong><br><br><strong>练 2</strong>：Natalia γ=0.95/周。100 utiles in 2 weeks?<br>→ 100 × 0.95² = 100 × 0.9025 = <strong>90.25 utiles</strong><br><br><strong>练 3</strong>：Siva γ=0.80/小时。50 utiles in 3 hours?<br>→ 50 × 0.8³ = 50 × 0.512 = <strong>25.6 utiles</strong>`
   },
   {
-    topic: "Formulas",
-    term: "Q-learning 快速练",
-    termCn: "Q 值更新计算",
-    back: "<span class='formula'>Q(s,a) ← Q(s,a) + α · [R(s') + γ · max Q(s',a') − Q(s,a)]</span><strong>Wally: run to truck</strong><br>old Q=3, R=4, max Q(s', a') = 8（swim 最大）<br>γ=0.7, α=0.8<br><br>pred_err = [4 + 0.7×8] − 3 = 9.6 − 3 = <strong>6.6</strong><br>new Q = 3 + 0.8 × 6.6 = <strong>8.28</strong><br><br><strong>Wally: swim（到 water 是 terminal）</strong><br>old Q=8, R=-5, max Q(s', a') = <strong>0</strong>（terminal！）<br><br>pred_err = [-5 + 0] − 8 = <strong>-13</strong><br>new Q = 8 + 0.8 × (-13) = <strong>-2.4</strong>"
+    topic: `Formulas`,
+    term: `Q-learning 快速练`,
+    termCn: `Q 值更新计算`,
+    back: `<span class='formula'>Q(s,a) ← Q(s,a) + α · [R(s') + γ · max Q(s',a') − Q(s,a)]</span><strong>Wally: run to truck</strong><br>old Q=3, R=4, max Q(s', a') = 8（swim 最大）<br>γ=0.7, α=0.8<br><br>pred_err = [4 + 0.7×8] − 3 = 9.6 − 3 = <strong>6.6</strong><br>new Q = 3 + 0.8 × 6.6 = <strong>8.28</strong><br><br><strong>Wally: swim（到 water 是 terminal）</strong><br>old Q=8, R=-5, max Q(s', a') = <strong>0</strong>（terminal！）<br><br>pred_err = [-5 + 0] − 8 = <strong>-13</strong><br>new Q = 8 + 0.8 × (-13) = <strong>-2.4</strong>`
   }
 ];
 
